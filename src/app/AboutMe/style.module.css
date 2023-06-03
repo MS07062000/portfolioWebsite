@@ -1,0 +1,75 @@
+@media only screen and (min-width: 320px) {
+    .aboutMeContainer {}
+
+    .imageContainer {}
+
+    .selfImage {}
+
+    .selfInformationContainer {}
+
+    .title {}
+
+    .information {}
+
+    .contactMeButton {}
+
+}
+
+@media only screen and (min-width: 768px) {
+    .aboutMeContainer {}
+
+    .imageContainer {}
+
+    .selfImage {}
+
+    .selfInformationContainer {}
+
+    .title {}
+
+    .information {}
+
+    .contactMeButton {}
+}
+
+@media only screen and (min-width: 1024px) {
+    .aboutMeContainer {
+        margin: 5% 10%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .imageContainer {
+        flex-basis: 50%;
+    }
+
+    .selfImage {
+        width: 65%;
+        height: 100%;
+        border-radius: 5%;
+    }
+
+    .selfInformationContainer {
+        flex-basis: 50%;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 4rem;
+    }
+
+    .information {
+        font-size: 1rem;
+        margin: 3% 0%;
+        text-align: justify;
+    }
+
+    .contactMeButton {
+        font-size: 1rem;
+        padding: 10px;
+        background-color: red;
+        border-color: red;
+    }
+}

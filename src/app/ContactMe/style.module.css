@@ -1,0 +1,107 @@
+@media only screen and (min-width: 320px) {
+    .contactContainer {}
+
+    .title {}
+
+    .contactImageAndFormContainer {}
+
+    .contactImageContainer {}
+
+    .contactImage {}
+
+    .contactFormContainer {}
+
+    .formField {}
+
+    .formInput {}
+
+    .submitButton {}
+
+}
+
+@media only screen and (min-width: 768px) {
+    .contactContainer {}
+
+    .title {}
+
+    .contactImageAndFormContainer {}
+
+    .contactImageContainer {}
+
+    .contactImage {}
+
+    .contactFormContainer {}
+
+    .formField {}
+
+    .formInput {}
+
+    .submitButton {}
+}
+
+@media only screen and (min-width: 1024px) {
+    .contactContainer {
+        margin: 5% 10%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .title {
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 2%;
+    }
+
+    .contactImageAndFormContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .contactImageContainer {
+        flex-basis: 50%;
+    }
+
+    .contactImage {
+        width: 65%;
+        height: 100%;
+    }
+
+    .contactFormContainer {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        width: 100%;
+    }
+
+    .formField {
+        /* position: relative; */
+        margin: 1%;
+    }
+
+    .formFieldIcon{
+        /* position: absolute; */
+        padding: 10px;
+        
+    }
+    .formInput {
+        font-size: 1rem;
+        margin: 3% 0%;
+        padding: 10px;
+        width: 100%;
+        width: 100%;
+    }
+
+    .submitButton {
+        font-size: 1rem;
+        padding: 10px;
+        background-color: red;
+        border-color: red;
+    }
+}
