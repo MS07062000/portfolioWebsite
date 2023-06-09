@@ -1,0 +1,28 @@
+@media screen and (min-width:320px) {}
+
+@media screen and (min-width:768px) {}
+
+@media screen and (min-width:1024px) {
+    .container {
+        background-color: white;
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 20px 100px 50px 100px;
+    }
+
+    .title {
+        margin-bottom: 2%;
+    }
+
+    .skillsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+}

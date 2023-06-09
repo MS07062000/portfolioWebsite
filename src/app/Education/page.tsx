@@ -9,7 +9,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function Education() {
     return (
-        <div className={styles.container}>
         <div className={styles.education}>
             <h1 className={styles.title}>
                 <FontAwesomeIcon icon={faGraduationCap} />
@@ -18,6 +17,6 @@ export function Education() {
             <InstitutionCard srcImage={secondarySchoolImage} courseName='Senior Secondary Certification(SSC)' institutionName='St.Thomas High School' yearOfCompletion='2016'></InstitutionCard>
             <InstitutionCard srcImage={higherSecondarySchoolImage} courseName='Higher Secondary Certification(HSC)' institutionName='B.K. Birla College of Arts, Science & Commerce, Kalyan' yearOfCompletion='2018'></InstitutionCard>
             <InstitutionCard srcImage={collegeImage} courseName='Bachelor Of Technology In Electronics And Telecommunications' institutionName='K. J. Somaiya College of Engineering' yearOfCompletion='2022'></InstitutionCard>
-        </div></div>
+        </div>
     );
 }

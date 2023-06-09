@@ -1,0 +1,30 @@
+@media screen and (min-width:320px) {
+    
+}
+
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width:1024px) {
+    .card{
+        margin: 2%;
+        border-radius: 10%;
+        padding: 10px;
+        width: 15%;
+        box-shadow: 0px 0px 18px 10px rgba(0, 0, 0, 0.2);
+        background: rgba(0, 0, 22, 1);
+        text-align: center;
+        color: white;
+    }
+
+    .skillImage{
+
+    }
+
+    .skillName{
+        font-size: 1rem;
+
+    }
+    
+}

@@ -10,26 +10,24 @@ export function ContactMe() {
         <div className={styles.contactContainer}>
             <p className={styles.title}>Get in Touch </p>
             <div className={styles.contactImageAndFormContainer}>
-                <div className={styles.contactImageContainer}>
-                    <Image src={contactImg} alt="Contact Image" className={styles.contactImage}></Image>
-                </div>
+                <Image src={contactImg} alt="Contact Image" className={styles.contactImage}></Image>
                 <div className={styles.contactFormContainer}>
-                    {/* <div className={styles.formField}> */}
+                    <div className={styles.formField}>
                         <FontAwesomeIcon icon={faUser} className={styles.formFieldIcon} />
                         <input type="text" placeholder='Name' className={styles.formInput} required></input>
-                    {/* </div>
-                    <div className={styles.formField}> */}
+                    </div>
+                    <div className={styles.formField}>
                         <FontAwesomeIcon icon={faEnvelope} className={styles.formFieldIcon} />
                         <input type="text" placeholder='Email' className={styles.formInput} required></input>
-                    {/* </div>
-                    <div className={styles.formField}> */}
+                    </div>
+                    <div className={styles.formField}>
                         <FontAwesomeIcon icon={faPhone} className={styles.formFieldIcon} />
                         <input type="text" placeholder='Phone' className={styles.formInput} required></input>
-                    {/* </div>
-                    <div className={styles.formField}> */}
+                    </div>
+                    <div className={styles.formField}>
                         <FontAwesomeIcon icon={faMessage} className={styles.formFieldIcon} />
                         <input type="text" placeholder='Message' className={styles.formInput} required></input>
-                    {/* </div> */}
+                    </div>
                     <button className={styles.submitButton}>Submit</button>
                 </div>
             </div>

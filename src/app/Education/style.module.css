@@ -1,11 +1,5 @@
 
 @media only screen and (min-width: 320px) {
-    .container {
-        background-color: white;
-        display: inline-block;
-        width: 100vw;
-    }
-
     .education {
         display: flex;
         flex-direction: column;
@@ -13,7 +7,8 @@
         justify-content: center;
         align-items: center;
         row-gap: 10px;
-        margin: 5%;
+        width: 100vw;
+        background-color: white;
     }
 
     .title {
@@ -22,12 +17,6 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .container {
-        background-color: white;
-        display: inline-block;
-        width: 100vw;
-    }
-
     .education {
         display: flex;
         flex-direction: column;
@@ -35,7 +24,8 @@
         justify-content: center;
         align-items: center;
         row-gap: 10px;
-        margin: 5% 8%;
+        background-color: white;
+        width: 100vw;
     }
 
     .title {
@@ -46,12 +36,6 @@
 
 
 @media only screen and (min-width: 1024px) {
-    .container {
-        background-color: white;
-        display: inline-block;
-        width: 100vw;
-    }
-
     .education {
         display: flex;
         flex-direction: column;
@@ -59,7 +43,9 @@
         justify-content: center;
         align-items: center;
         row-gap: 10px;
-        margin: 5% 10%;
+        width: 100vw;
+        background-color: white;
+        padding: 20px 100px 50px 100px;
     }
 
     .title {

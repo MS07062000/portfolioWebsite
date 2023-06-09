@@ -1,0 +1,22 @@
+@media screen and (min-width:320px) {
+    
+}
+
+@media screen and (min-width:768px) {
+    
+}
+
+@media screen and (min-width:1024px) {
+    .footer{
+        padding: 20px 100px 50px 100px;
+    }
+
+    .contactInfo{
+        line-height: 10px;
+        
+    }
+    .contactInfo>p>span{
+        margin-right: 2%;
+    }
+    
+}
