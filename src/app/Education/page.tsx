@@ -12,7 +12,7 @@ export function Education() {
         <div className={styles.education}>
             <h1 className={styles.title}>
                 <FontAwesomeIcon icon={faGraduationCap} />
-                <span> My Education</span>
+                <span>Education</span>
             </h1>
             <InstitutionCard srcImage={secondarySchoolImage} courseName='Senior Secondary Certification(SSC)' institutionName='St.Thomas High School' yearOfCompletion='2016'></InstitutionCard>
             <InstitutionCard srcImage={higherSecondarySchoolImage} courseName='Higher Secondary Certification(HSC)' institutionName='B.K. Birla College of Arts, Science & Commerce, Kalyan' yearOfCompletion='2018'></InstitutionCard>

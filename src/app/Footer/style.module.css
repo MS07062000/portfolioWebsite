@@ -8,15 +8,42 @@
 
 @media screen and (min-width:1024px) {
     .footer{
-        padding: 20px 100px 50px 100px;
+        padding: 20px 100px 20px 100px;
     }
 
     .contactInfo{
         line-height: 10px;
-        
     }
-    .contactInfo>p>span{
-        margin-right: 2%;
+    .contactInfo p:first-child{
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 600;
     }
     
+    .contactInfo p {
+    margin-bottom: 5px;
+    }
+    
+    .contactInfo span {
+    margin-right: 10px;
+    }
+    
+    .contactInfo a {
+    font-size: 1.8rem;
+    color: #000000;
+    }
+    
+    .heartIcon{
+    color: #ff0000;
+    }
+
+    .footer > p:last-child {
+    margin:10px 0px;
+    text-align: center;
+    }
+
+    .ownerName{
+        font-weight: bold;
+        color:green;
+    }
 }

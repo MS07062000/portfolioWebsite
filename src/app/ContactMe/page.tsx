@@ -2,13 +2,13 @@ import styles from '../ContactMe/style.module.css';
 import Image from 'next/image';
 import contactImg from '../../../public/contact1.png'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope, faMessage, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHeadset, faMessage, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 
 
 export function ContactMe() {
     return (
         <div className={styles.contactContainer}>
-            <p className={styles.title}>Get in Touch </p>
+            <h1 className={styles.title}><span><FontAwesomeIcon icon={faHeadset} /></span> Get in Touch </h1>
             <div className={styles.contactImageAndFormContainer}>
                 <Image src={contactImg} alt="Contact Image" className={styles.contactImage}></Image>
                 <div className={styles.contactFormContainer}>
