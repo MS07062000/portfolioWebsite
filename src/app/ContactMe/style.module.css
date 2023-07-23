@@ -46,11 +46,12 @@
         flex-wrap: nowrap;
         align-items: center;
         padding: 20px 100px 50px 100px;
+        background:linear-gradient(#0370B9 0%, #FCD000 100%)
     }
 
     .title {
-        font-weight: bold;
-        margin-bottom: 2%;
+        font-weight: 500;
+        line-height: 1.2;
     }
 
     .contactImageAndFormContainer {

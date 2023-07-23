@@ -9,6 +9,7 @@
 @media screen and (min-width:1024px) {
     .footer{
         padding: 20px 100px 20px 100px;
+        background:linear-gradient(#FCD000 20%, #76DAFF 100%);
     }
 
     .contactInfo{

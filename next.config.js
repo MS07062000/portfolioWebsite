@@ -13,6 +13,12 @@ const nextConfig = {
                 hostname: 'github.githubassets.com',
                 port: '',
                 pathname: '/**',
+            },
+            {
+                protocol: 'https',
+                hostname: 'img.youtube.com',
+                port: '',
+                pathname: '/**',
             }
         ],
     },

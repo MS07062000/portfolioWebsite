@@ -33,12 +33,13 @@
 
 @media only screen and (min-width: 1024px) {
     .aboutMeContainer {
-        margin: 5% 10%;
+        padding: 5% 10%;
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
+        background:linear-gradient(rgb(0, 110, 177) 20%, rgb(252, 90, 25) 80%);
     }
 
     .imageContainer {
@@ -57,19 +58,29 @@
 
     .title {
         font-weight: bold;
-        font-size: 4rem;
+        font-weight: 700;
+        font-size: 3rem;
+        color: white;
     }
 
     .information {
         font-size: 1rem;
         margin: 3% 0%;
         text-align: justify;
+        color:black;
+        font-weight: 500;
+        font-family: revert
     }
 
     .contactMeButton {
         font-size: 1rem;
         padding: 10px;
-        background-color: red;
-        border-color: red;
+        background-color: #00FFFF;
+        border-color: #00FFFF;
+        font-family: revert;
+        color: black;
+        font-weight: 700;
+        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+        box-sizing: border-box;
     }
 }

@@ -44,7 +44,8 @@
         align-items: center;
         row-gap: 10px;
         width: 100vw;
-        background-color: white;
+        /* background-color: white; */
+        background: linear-gradient(rgb(252, 90, 25) 0%, rgb(255, 255, 255) 100%);
         padding: 20px 100px 50px 100px;
     }
 

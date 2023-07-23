@@ -1,10 +1,12 @@
 @media only screen and (min-width: 320px) {
     .card {
-        border: 1px solid #eaeaea;
+        border: 1px solid mediumpurple;
+        background-color: mediumpurple;
         border-radius: 10px;
         padding: 20px;
         width: 80%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: revert;
     }
 
     .grid {
@@ -42,19 +44,20 @@
     }
 
     .year_Of_Completion {
-        color: rgb(34, 109, 0);
-        font-family: "Nunito", sans-serif;
+       color: darkred;
         font-weight: 700;
     }
 }
 
 @media only screen and (min-width: 768px) {
     .card {
-        border: 1px solid #eaeaea;
+        border: 1px solid mediumpurple;
+        background-color: mediumpurple;
         border-radius: 10px;
         padding: 20px;
         width: 80%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: revert;
     }
 
     .grid {
@@ -85,26 +88,29 @@
     .course_name {
         color: #012970;
         font-weight: 600;
+        font-size: x-large;
     }
 
     .institution_name {
-        font-weight: 600;
+        font-weight: 500;
+        font-size: larger;
     }
 
     .year_Of_Completion {
-        color: rgb(34, 109, 0);
-        font-family: "Nunito", sans-serif;
+       color: darkred;
         font-weight: 700;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .card {
-        border: 1px solid #eaeaea;
+        border: 1px solid mediumpurple;
+        background-color: mediumpurple;
         border-radius: 10px;
         padding: 20px;
         width: 80%;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-family: revert;
     }
 
     .grid {
@@ -135,15 +141,16 @@
     .course_name {
         color: #012970;
         font-weight: 600;
+        font-size: x-large;
     }
 
     .institution_name {
-        font-weight: 600;
+        font-weight: 500;
+        font-size: larger;
     }
 
     .year_Of_Completion {
-        color: rgb(34, 109, 0);
-        font-family: "Nunito", sans-serif;
+        color: darkred;
         font-weight: 700;
     }
 }

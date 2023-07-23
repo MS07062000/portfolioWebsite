@@ -4,7 +4,8 @@
 
 @media screen and (min-width:1024px) {
     .container {
-        background-color: white;
+        background:linear-gradient(rgb(255, 255, 255) 0%, #D27D2D 100%);
+        /* background-color: white; */
         display: flex;
         width: 100vw;
         flex-direction: column;
