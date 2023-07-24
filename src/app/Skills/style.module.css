@@ -1,10 +1,58 @@
-@media screen and (min-width:320px) {}
+@media screen and (min-width:320px) {
+    .container {
+        background:linear-gradient(rgb(255, 255, 255) 80%, #90EE90 100%);
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding:20px 10px 20px 10px;
+    }
+    
+    .title {
+        margin-bottom: 2%;
+    }
+    
+    .skillsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+    }
+    
+}
 
-@media screen and (min-width:768px) {}
+@media screen and (min-width:768px) {
+    .container {
+        background:linear-gradient(rgb(255, 255, 255) 80%, #90EE90 100%);
+        /* background-color: white; */
+        display: flex;
+        width: 100vw;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 20px 50px 20px 50px;
+    }
+
+    .title {
+        margin-bottom: 2%;
+    }
+
+    .skillsContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: center;
+    }
+}
 
 @media screen and (min-width:1024px) {
     .container {
-        background:linear-gradient(rgb(255, 255, 255) 0%, #D27D2D 100%);
+        background:linear-gradient(rgb(255, 255, 255) 80%, #90EE90 100%);
         /* background-color: white; */
         display: flex;
         width: 100vw;

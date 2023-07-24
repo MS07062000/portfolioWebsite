@@ -1,42 +1,174 @@
 @media only screen and (min-width: 320px) {
-    .contactContainer {}
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding:20px 10px 20px 10px;
+        background-color: #0370B9;
+        color:white;
+    }
 
-    .title {}
+    .title {
+        font-weight: 500;
+        line-height: 1.2;
+    }
 
-    .contactImageAndFormContainer {}
+    .contactImageAndFormContainer {
+        width: 100%;
+    }
 
-    .contactImageContainer {}
+    /* .contactImageContainer {
+        flex-basis: 50%;
+    } */
 
-    .contactImage {}
+    .contactImage {
+        display:none;
+    }
 
-    .contactFormContainer {}
+    .contactFormContainer {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        width: 100%;
+        row-gap:10px;
+    }
 
-    .formField {}
+    .formField {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        border: 2px solid;
+        border-radius: 2%;
+        width: 100%;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
 
-    .formInput {}
+    .formFieldIcon {
+        margin: 5px;
+        width: 10%;
+    }
 
-    .submitButton {}
+    .formInput {
+        width: 100%;
+        margin: 2%;
+        font-size: 1rem;
+        background-color: transparent;
+        border: 0px solid;
+    }
+
+    .formInput::placeholder{
+        color: white;
+    }
+    
+    .formInput:focus {
+        outline: none;
+    }
+
+    .submitButton {
+        width:100%;
+        font-size: 1rem;
+        padding: 10px;
+        background-color: red;
+        border-color: red;
+        font-family: revert;
+        color: white;
+        font-weight: 700;
+        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+        box-sizing: border-box;
+    }
 
 }
 
 @media only screen and (min-width: 768px) {
-    .contactContainer {}
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 20px 50px 20px 50px;
+        background-color: #0370B9;
+        color:white;
+    }
 
-    .title {}
+    .title {
+        font-weight: 500;
+        line-height: 1.2;
+    }
 
-    .contactImageAndFormContainer {}
+    .contactImageAndFormContainer {
+        width: 100%;
+    }
 
-    .contactImageContainer {}
+    /* .contactImageContainer {
+        flex-basis: 50%;
+    } */
 
-    .contactImage {}
+    .contactImage {
+        display:none;
+    }
 
-    .contactFormContainer {}
+    .contactFormContainer {
+        flex-basis: 50%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-end;
+        width: 100%;
+        row-gap:10px;
+    }
 
-    .formField {}
+    .formField {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: flex-start;
+        border: 2px solid;
+        border-radius: 2%;
+        width: 100%;
+        height: 3.5rem;
+        font-size: 1.5rem;
+    }
 
-    .formInput {}
+    .formFieldIcon {
+        margin: 5px;
+        width: 10%;
+    }
 
-    .submitButton {}
+    .formInput {
+        width: 100%;
+        margin: 2%;
+        font-size: 1rem;
+        background-color: transparent;
+        border: 0px solid;
+    }
+
+    .formInput::placeholder{
+        color: white;
+    }
+    
+    .formInput:focus {
+        outline: none;
+    }
+
+    .submitButton {
+        width:100%;
+        font-size: 1rem;
+        padding: 10px;
+        background-color: red;
+        border-color: red;
+        font-family: revert;
+        color: white;
+        font-weight: 700;
+        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+        box-sizing: border-box;
+    }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -46,7 +178,8 @@
         flex-wrap: nowrap;
         align-items: center;
         padding: 20px 100px 50px 100px;
-        background:linear-gradient(#0370B9 0%, #FCD000 100%)
+        background-color: #0370B9;
+        color:white;
     }
 
     .title {
@@ -70,6 +203,7 @@
 
     .contactImage {
         flex-basis: 50%;
+        display: block;
         /* width: 100%;
         height: 100%; */
     }
@@ -110,14 +244,23 @@
         border: 0px solid;
     }
 
+    .formInput::placeholder{
+        color: white;
+    }
+
     .formInput:focus {
         outline: none;
     }
 
     .submitButton {
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 10px;
         background-color: red;
         border-color: red;
+        font-family: revert;
+        color: white;
+        font-weight: 700;
+        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+        box-sizing: border-box;
     }
 }

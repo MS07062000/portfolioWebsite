@@ -3,12 +3,13 @@ import Script from 'next/script'; // Import next/script to load scripts asynchro
 import Image from 'next/image';
 import profilePic from '../../../public/murali.jpeg'
 import Head from "next/head";
+import styles from './style.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export function CustomNavbar(){
   return( 
     <>
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.bglight}`}>
     <div className="container">
         {/* Logo */}
         <Image src={profilePic} alt="Picture of the author" 
@@ -30,33 +31,33 @@ export function CustomNavbar(){
         <div className="collapse navbar-collapse justify-content-end" id="navbarNav">
         <ul className="navbar-nav">
             <li className="nav-item">
-            <Link href="/">
-                <span className="nav-link">Home</span>
+            <Link href="/" className={styles.linktag}>
+                <span className={`nav-link ${styles.navtitleColor}`}>Home</span>
             </Link>
             </li>
             <li className="nav-item">
-            <Link href="/">
-                <span className="nav-link">About</span>
+            <Link href="/" className={styles.linktag}>
+                <span className={`nav-link ${styles.navtitleColor}`}>About</span>
             </Link>
             </li>
             <li className="nav-item">
-            <Link href="/">
-                <span className="nav-link">Skills</span>
+            <Link href="/" className={styles.linktag}>
+                <span className={`nav-link ${styles.navtitleColor}`}>Skills</span>
             </Link>
             </li>
             <li className="nav-item">
-            <Link href="/">
-                <span className="nav-link">Education</span>
+            <Link href="/" className={styles.linktag}>
+                <span className={`nav-link ${styles.navtitleColor}`}>Education</span>
             </Link>
             </li>
             <li className="nav-item">
-            <Link href="/">
-                <span className="nav-link">Work</span>
+            <Link href="/" className={styles.linktag}>
+                <span className={`nav-link ${styles.navtitleColor}`}>Work</span>
             </Link>
             </li>
             <li className="nav-item">
-            <Link href="/">
-                <span className="nav-link">Contact Me</span>
+            <Link href="/" className={styles.linktag}>
+                <span className={`${styles.navtitleColor} nav-link`}>Contact Me</span>
             </Link>
             </li>
         </ul>
