@@ -22,7 +22,7 @@ export default function ContactMe() {
                     </div>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faPhone} className={styles.formFieldIcon} />
-                        <input type="number" placeholder='Phone' className={styles.formInput} name="phone" min="7" max="20" required></input>
+                        <input type="number" placeholder='Phone' className={styles.formInput} name="phone" required></input>
                     </div>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faMessage} className={styles.formFieldIcon} />
