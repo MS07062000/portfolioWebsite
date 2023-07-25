@@ -1,6 +1,6 @@
 "use client";
 import Image from 'next/image';
-import profilePic from '../../../public/LOGO123.jpg'
+import profilePic from '../../../public/websitelogo.jpg'
 import styles from './style.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
