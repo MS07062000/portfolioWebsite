@@ -5,7 +5,7 @@ import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import github from '../../../public/github-mark.svg'
 export function Skills() {
     return (
-        <div className={styles.container}>
+        <div id="skills" className={styles.container}>
             <h1 className={styles.title}>
                 <FontAwesomeIcon icon={faLaptopCode} />
                 <span> Skills & Abilities</span>

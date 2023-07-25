@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export function Education() {
     return (
-        <div className={styles.education}>
+        <div id="education" className={styles.education}>
             <h1 className={styles.title}>
                 <FontAwesomeIcon icon={faGraduationCap} />
                 <span>Education</span>

@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import styles from '../AboutMe/style.module.css'
 import profilePic from '../../../public/murali.jpeg'
+import Link from 'next/link';
 export function AboutMe() {
     return (
-        <div className={styles.aboutMeContainer}>
+        <div id="aboutMe" className={styles.aboutMeContainer}>
             <div className={styles.imageContainer}>
-                <Image src={profilePic} alt="Picture of the author" 
+                <Image src={profilePic} alt="Picture of the author"
                     className={styles.selfImage}></Image>
             </div>
             <div className={styles.selfInformationContainer}>
@@ -20,7 +21,9 @@ export function AboutMe() {
                     Currently, I am seeking opportunities to expand my skills and contribute to exciting projects. Whether it&apos;s crafting user-friendly interfaces or developing robust back-end systems, I am eager to tackle new challenges and contribute to the success of any development team.
                 </p>
                 <p className={styles.information}>Feel free to reach out to me to discuss potential collaborations, project ideas, or just to connect. Let&apos;s build something amazing together!</p>
-                <button className={styles.contactMeButton}>Contact Me</button>
+                <Link href="https://www.upwork.com/workwith/muralis3">
+                    <button className={styles.contactMeButton}>Hire Me</button>
+                </Link>
             </div>
         </div>
     );

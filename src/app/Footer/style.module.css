@@ -25,6 +25,10 @@
         color: #000000;
     }
 
+    .img{
+        vertical-align: sub;
+    }
+    
     .heartIcon {
         color: #ff0000;
     }
@@ -65,6 +69,10 @@
     .contactInfo a {
         font-size: 1.8rem;
         color: #000000;
+    }
+
+    .img{
+        vertical-align: sub;
     }
 
     .heartIcon {
@@ -111,6 +119,10 @@
     .contactInfo a {
         font-size: 1.8rem;
         color: #000000;
+    }
+
+    .img{
+        vertical-align: sub;
     }
 
     .heartIcon {

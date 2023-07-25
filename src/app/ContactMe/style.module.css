@@ -4,9 +4,9 @@
         flex-direction: column;
         flex-wrap: nowrap;
         align-items: center;
-        padding:20px 10px 20px 10px;
-        background-color: #0370B9;
-        color:white;
+        padding: 20px 10px 20px 10px;
+        background: linear-gradient(#90EE90 05%, #0370B9 100%);
+        color: black;
     }
 
     .title {
@@ -23,7 +23,7 @@
     } */
 
     .contactImage {
-        display:none;
+        display: none;
     }
 
     .contactFormContainer {
@@ -33,7 +33,7 @@
         flex-wrap: nowrap;
         align-items: flex-end;
         width: 100%;
-        row-gap:10px;
+        row-gap: 10px;
     }
 
     .formField {
@@ -62,16 +62,16 @@
         border: 0px solid;
     }
 
-    .formInput::placeholder{
-        color: white;
+    .formInput::placeholder {
+        color: black;
     }
-    
+
     .formInput:focus {
         outline: none;
     }
 
     .submitButton {
-        width:100%;
+        width: 100%;
         font-size: 1rem;
         padding: 10px;
         background-color: red;
@@ -92,8 +92,8 @@
         flex-wrap: nowrap;
         align-items: center;
         padding: 20px 50px 20px 50px;
-        background-color: #0370B9;
-        color:white;
+        background: linear-gradient(#90EE90 05%, #0370B9 100%);
+        color: black;
     }
 
     .title {
@@ -110,7 +110,7 @@
     } */
 
     .contactImage {
-        display:none;
+        display: none;
     }
 
     .contactFormContainer {
@@ -120,7 +120,7 @@
         flex-wrap: nowrap;
         align-items: flex-end;
         width: 100%;
-        row-gap:10px;
+        row-gap: 10px;
     }
 
     .formField {
@@ -149,16 +149,16 @@
         border: 0px solid;
     }
 
-    .formInput::placeholder{
-        color: white;
+    .formInput::placeholder {
+        color: black;
     }
-    
+
     .formInput:focus {
         outline: none;
     }
 
     .submitButton {
-        width:100%;
+        width: 100%;
         font-size: 1rem;
         padding: 10px;
         background-color: red;
@@ -178,8 +178,8 @@
         flex-wrap: nowrap;
         align-items: center;
         padding: 20px 100px 50px 100px;
-        background-color: #0370B9;
-        color:white;
+        background: linear-gradient(#90EE90 05%, #0370B9 100%);
+        color: black;
     }
 
     .title {
@@ -215,7 +215,7 @@
         flex-wrap: nowrap;
         align-items: flex-end;
         width: 100%;
-        row-gap:10px;
+        row-gap: 10px;
     }
 
     .formField {
@@ -239,13 +239,16 @@
     .formInput {
         width: 100%;
         margin: 2%;
-        font-size: 1rem;
+        font-size: 1.2rem;
         background-color: transparent;
         border: 0px solid;
+        font-family: arial;
     }
 
-    .formInput::placeholder{
-        color: white;
+    .formInput::placeholder {
+        color: black;
+        font-family: arial;
+        font-size: 1.2rem;
     }
 
     .formInput:focus {

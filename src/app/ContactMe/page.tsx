@@ -7,31 +7,32 @@ import { faEnvelope, faHeadset, faMessage, faPhone, faUser } from '@fortawesome/
 
 export function ContactMe() {
     return (
-        <div className={styles.contactContainer}>
+        <div id="contactMe" className={styles.contactContainer}>
             <h1 className={styles.title}><span><FontAwesomeIcon icon={faHeadset} /></span> Get in Touch </h1>
             <div className={styles.contactImageAndFormContainer}>
                 <Image src={contactImg} alt="Contact Image" className={styles.contactImage}></Image>
-                <div className={styles.contactFormContainer}>
+                <form autoComplete="off" action="https://formsubmit.co/singhmurali.14@email.com" method="POST" className={styles.contactFormContainer}>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faUser} className={styles.formFieldIcon} />
-                        <input type="text" placeholder='Name' className={styles.formInput} required></input>
+                        <input type="text" placeholder='Name' className={styles.formInput} name="name" required></input>
                     </div>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faEnvelope} className={styles.formFieldIcon} />
-                        <input type="text" placeholder='Email' className={styles.formInput} required></input>
+                        <input type="text" placeholder='Email' className={styles.formInput} name="email" required></input>
                     </div>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faPhone} className={styles.formFieldIcon} />
-                        <input type="text" placeholder='Phone' className={styles.formInput} required></input>
+                        <input type="text" placeholder='Phone' className={styles.formInput} name="phone" required></input>
                     </div>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faMessage} className={styles.formFieldIcon} />
-                        <input type="text" placeholder='Message' className={styles.formInput} required></input>
+                        <input type="text" placeholder='Message' className={styles.formInput} name="message" required></input>
                     </div>
-                    <button className={styles.submitButton}>Submit</button>
-                </div>
+                    <input type="hidden" name="_captcha" value="false"></input>
+                    <button className={styles.submitButton} type="submit">Submit</button>
+                </form>
             </div>
         </div>
-        
+
     );
 }
