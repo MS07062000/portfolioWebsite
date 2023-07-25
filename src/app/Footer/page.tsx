@@ -6,7 +6,7 @@ import Link from 'next/link';
 import Image from "next/image";
 import topmateLogo from '../../../public/topmate.png'
 
-export function Footer() {
+export default function Footer() {
     return (<div className={styles.footer}>
         <div className={styles.contactInfo}>
             <p>Contact Info</p>

@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { SkillCard } from './components/skillCard/page'
+import { default as SkillCard } from './components/skillCard/page'
 import styles from './style.module.css'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import github from '../../../public/github-mark.svg'
-export function Skills() {
+export default function Skills() {
     return (
         <div id="skills" className={styles.container}>
             <h1 className={styles.title}>

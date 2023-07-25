@@ -5,7 +5,7 @@ import styles from '../institutionCard/style.module.css';
 type institutionCardProps = {
     srcImage: string | StaticImageData; courseName: string; institutionName: string; yearOfCompletion: string
 }
-export const InstitutionCard: FunctionComponent<institutionCardProps> = ({ srcImage, courseName, institutionName, yearOfCompletion }) => {
+const InstitutionCard: FunctionComponent<institutionCardProps> = ({ srcImage, courseName, institutionName, yearOfCompletion }) => {
     return (
         <div className={`${styles.card} ${styles.grid}`}>
             <div className={styles.img_column}>
@@ -19,3 +19,5 @@ export const InstitutionCard: FunctionComponent<institutionCardProps> = ({ srcIm
         </div>
     );
 }
+
+export default InstitutionCard;

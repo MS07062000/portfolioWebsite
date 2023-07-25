@@ -30,7 +30,7 @@ class ProjectInfo {
     }
 }
 
-export function Projects() {
+export default function Projects() {
     const spence: ProjectInfo = new ProjectInfo('Spence',
         'Spence is a Flutter-based mobile app for tracking the shelf life of pantry items, medicines, cosmetics, and more by storing expiry dates in Firebase.',
         'https://github.com/MS07062000/spence',

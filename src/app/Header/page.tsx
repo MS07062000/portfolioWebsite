@@ -5,7 +5,7 @@ import styles from './style.module.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
 
-export function CustomNavbar() {
+export default function CustomNavbar() {
     const handleOnClick = (headerElementID: String, bodyElementID: String) => {
         document.body.querySelector(`[id=${headerElementID}]`)?.addEventListener("click", () => {
             const element = document.body.querySelector(`[id=${bodyElementID}]`);

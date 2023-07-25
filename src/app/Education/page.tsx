@@ -1,13 +1,13 @@
 
 import styles from '../Education/style.module.css';
-import { InstitutionCard } from './components/institutionCard/page';
+import {default as InstitutionCard } from './components/institutionCard/page';
 import secondarySchoolImage from '../../../public/secondarySchoolLogo.png';
 import higherSecondarySchoolImage from '../../../public/higherSecondarySchoolLogo.png';
 import collegeImage from '../../../public/KJSCE-Logo.svg';
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-export function Education() {
+export default function Education() {
     return (
         <div id="education" className={styles.education}>
             <h1 className={styles.title}>

@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope, faHeadset, faMessage, faPhone, faUser } from '@fortawesome/free-solid-svg-icons';
 
 
-export function ContactMe() {
+export default function ContactMe() {
     return (
         <div id="contactMe" className={styles.contactContainer}>
             <h1 className={styles.title}><span><FontAwesomeIcon icon={faHeadset} /></span> Get in Touch </h1>
