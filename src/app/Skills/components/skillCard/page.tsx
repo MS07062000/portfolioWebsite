@@ -1,40 +1,23 @@
 import React, { FunctionComponent } from "react";
 import styles from './style.module.css';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
-type SkillsProps = { skillName: string; skillIconImage: string }
+type SkillsProps = { skillName: string; skillIconImage: string | StaticImageData }
 
 const SkillCard: FunctionComponent<SkillsProps> = ({ skillName, skillIconImage }) => {
-    // Check if skillIconImage is a URL or an imported SVG
-    const isUrl = typeof skillIconImage === "string";
+    return (
+        <div className={styles.card}>
+            <Image
+                className={styles.skillImage}
+                src={skillIconImage}
+                width={50}
+                height={50}
+                alt="skillLogo"
+            />
+            <p className={styles.skillName}>{skillName}</p>
+        </div>
+    );
 
-    if (isUrl) {
-        return (
-            <div className={styles.card}>
-                <Image
-                    className={styles.skillImage}
-                    src={skillIconImage}
-                    width={50}
-                    height={50}
-                    alt="skillLogo"
-                />
-                <p className={styles.skillName}>{skillName}</p>
-            </div>
-        );
-    } else {
-        return (
-            <div className={styles.card}>
-                <Image
-                    className={styles.skillImage}
-                    src={skillIconImage}
-                    width={50}
-                    height={50}
-                    alt="skillLogo"
-                />
-                <p className={styles.skillName}>{skillName}</p>
-            </div>
-        );
-    }
 }
 
 

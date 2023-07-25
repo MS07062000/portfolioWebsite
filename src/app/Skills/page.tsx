@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { default as SkillCard } from './components/skillCard/page'
 import styles from './style.module.css'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
-import github from '../../../public/github-mark.svg'
+import github from '../../../public/github.jpg';
+import express from '../../../public/express.png';
 export default function Skills() {
     return (
         <div id="skills" className={styles.container}>
@@ -15,7 +16,7 @@ export default function Skills() {
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/css3.png" skillName="CSS"></SkillCard>
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/javascript--v1.png" skillName="Javascript"></SkillCard>
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/nodejs.png" skillName="NodeJS"></SkillCard>
-                <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/express-js" skillName="ExpressJS"></SkillCard>
+                <SkillCard skillIconImage={express} skillName="ExpressJS"></SkillCard>
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/mongodb.png" skillName="MongoDB"></SkillCard>
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/flutter.png" skillName="Flutter"></SkillCard>
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/firebase.png" skillName="Firebase"></SkillCard>

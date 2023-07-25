@@ -11,7 +11,7 @@ export default function Footer() {
         <div className={styles.contactInfo}>
             <p>Contact Info</p>
             <p><span><FontAwesomeIcon icon={faEnvelope} /></span><span>singhmurali.14@gmail.com</span></p>
-            <p><span><FontAwesomeIcon icon={faLocationDot} /></span>NaviMumbai,India-410 209</p>
+            <p><span><FontAwesomeIcon icon={faLocationDot} /></span>Navi Mumbai,India-410 209</p>
             <p>
                 <Link href="https://github.com/MS07062000"><span><FontAwesomeIcon icon={faGithub} /></span></Link>
                 <Link href="https://www.linkedin.com/in/murali-singh/"><span><FontAwesomeIcon icon={faLinkedin} /></span></Link>
