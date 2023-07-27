@@ -1,4 +1,4 @@
-import React,{useEffect,useRef,FunctionComponent, LegacyRef} from "react";
+import React,{useEffect,useRef,FunctionComponent} from "react";
 import styles from './style.module.css';
 import Image, { StaticImageData } from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

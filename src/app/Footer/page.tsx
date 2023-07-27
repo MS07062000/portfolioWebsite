@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import styles from './style.module.css';
-import { faEnvelope, faHeart, faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faHeart, faLocationDot,faAddressCard } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faLinkedin,faTwitter,faYoutube } from '@fortawesome/free-brands-svg-icons'
 import Link from 'next/link';
 import Image from "next/image";
@@ -9,7 +9,7 @@ import topmateLogo from '../../../public/topmate.png'
 export default function Footer() {
     return (<div className={styles.footer}>
         <div className={styles.contactInfo}>
-            <p>Contact Info</p>
+            <p><span><FontAwesomeIcon icon={faAddressCard} /></span>Contact Info</p>
             <p><span><FontAwesomeIcon icon={faEnvelope} /></span><span>singhmurali.14@gmail.com</span></p>
             <p><span><FontAwesomeIcon icon={faLocationDot} /></span>Navi Mumbai,India-410 209</p>
             <p>
