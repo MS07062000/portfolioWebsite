@@ -11,7 +11,7 @@ export default function ContactMe() {
             <h1 className={styles.title}><span><FontAwesomeIcon icon={faHeadset} /></span> Get in Touch </h1>
             <div className={styles.contactImageAndFormContainer}>
                 <Image src={contactImg} alt="Contact Image" className={styles.contactImage}></Image>
-                <form autoComplete="off" action="d6ea074874fa4c9cbbd9e25cee936d63" method="POST" className={styles.contactFormContainer}>
+                <form autoComplete="off" action="https://formsubmit.co/d6ea074874fa4c9cbbd9e25cee936d63" method="POST" className={styles.contactFormContainer}>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faUser} className={styles.formFieldIcon} />
                         <input type="text" placeholder='Name' className={styles.formInput} name="name" required></input>
