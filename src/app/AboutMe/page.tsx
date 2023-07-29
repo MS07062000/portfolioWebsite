@@ -21,9 +21,9 @@ export default function AboutMe() {
                     Currently, I am seeking opportunities to expand my skills and contribute to exciting projects. Whether it&apos;s crafting user-friendly interfaces or developing robust back-end systems, I am eager to tackle new challenges and contribute to the success of any development team.
                 </p>
                 <p className={styles.information}>Feel free to reach out to me to discuss potential collaborations, project ideas, or just to connect. Let&apos;s build something amazing together!</p>
-                <Link href="https://www.upwork.com/workwith/muralis3">
+                <a href="https://www.upwork.com/workwith/muralis3">
                     <button className={styles.contactMeButton}>Hire Me</button>
-                </Link>
+                </a>
             </div>
         </div>
     );

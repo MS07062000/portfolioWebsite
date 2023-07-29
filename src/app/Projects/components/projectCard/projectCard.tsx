@@ -53,15 +53,15 @@ return (<div ref={projectCardRef} className={styles.projectCardContainer}>
         {/* <p>{projectName}</p> */}
         <p>{projectDescription}</p>
         <div className={styles.projectButtonsContainer}>
-            <Link href={codeLink}>
+            <a href={codeLink}>
             <FontAwesomeIcon size="2xl" icon={faGithub} />
-            </Link>
-            <Link href={videoLink}>
+            </a>
+            <a href={videoLink}>
             <FontAwesomeIcon size="2xl" icon={faYoutube}/>
-            </Link>
-            {deployedLink && (<Link href={deployedLink}>
+            </a>
+            {deployedLink && (<a href={deployedLink}>
             <FontAwesomeIcon size="2xl" icon={faArrowUpRightFromSquare} />
-            </Link>)}
+            </a>)}
         </div>
     </div>
 </div>);
