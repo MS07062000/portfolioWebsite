@@ -59,6 +59,14 @@ export default function Projects() {
         'https://img.youtube.com/vi/w9pjKrxJUCg/mqdefault.jpg',
         '');
 
+    const youtubeClone: ProjectInfo = new ProjectInfo('Youtube Clone',
+        'This project is built on Material UI v5.14.7 and React v18.2.0. It utilizes the Rapid API for certain functionalities.',
+        'https://github.com/MS07062000/YoutubeClone',
+        '',
+        'https://i.pinimg.com/originals/14/e5/84/14e584760464db3248dd7c57e15d577a.jpg',
+        'https://youtube-clone-ms07062000.vercel.app/'
+        );
+
     return (
         <div id="projects" className={styles.container}>
             <h1 className={styles.title}>
@@ -70,6 +78,7 @@ export default function Projects() {
                 <ProjectCard projectName={flightSearch.projectName} projectDescription={flightSearch.projectDescription} codeLink={flightSearch.codeLink} videoLink={flightSearch.videoLink} srcImage={flightSearch.srcImage} deployedLink={flightSearch.deployedLink}></ProjectCard>
                 <ProjectCard projectName={yelpCamp.projectName} projectDescription={yelpCamp.projectDescription} codeLink={yelpCamp.codeLink} videoLink={yelpCamp.videoLink} srcImage={yelpCamp.srcImage} deployedLink={yelpCamp.deployedLink}></ProjectCard>
                 <ProjectCard projectName={locationNotes.projectName} projectDescription={locationNotes.projectDescription} codeLink={locationNotes.codeLink} videoLink={locationNotes.videoLink} srcImage={locationNotes.srcImage}></ProjectCard>
+                <ProjectCard projectName={youtubeClone.projectName} projectDescription={youtubeClone.projectDescription} codeLink={youtubeClone.codeLink} videoLink={youtubeClone.videoLink} srcImage={youtubeClone.srcImage} deployedLink={youtubeClone.deployedLink}></ProjectCard>
             </div>
         </div>
     )

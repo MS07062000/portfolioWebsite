@@ -56,9 +56,9 @@ return (<div ref={projectCardRef} className={styles.projectCardContainer}>
             <a href={codeLink}>
             <FontAwesomeIcon size="2xl" icon={faGithub} />
             </a>
-            <a href={videoLink}>
+            {videoLink &&<a href={videoLink}>
             <FontAwesomeIcon size="2xl" icon={faYoutube}/>
-            </a>
+            </a>}
             {deployedLink && (<a href={deployedLink}>
             <FontAwesomeIcon size="2xl" icon={faArrowUpRightFromSquare} />
             </a>)}
