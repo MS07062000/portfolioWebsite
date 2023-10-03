@@ -15,7 +15,7 @@ export default function AboutMe() {
                     Hello, I&apos;m Murali Singh, a junior fullstack developer with a strong passion for web and app development. I am enthusiastic about creating dynamic and engaging experiences for users through my coding skills.
                 </p>
                 <p className={styles.information}>
-                    With a solid foundation in both front-end and back-end technologies, I enjoy building innovative and responsive web applications. My expertise lies in HTML, CSS, JavaScript, and various frameworks like React for front-end development. On the back-end, I am proficient in languages like Node.js,Express.js along with databases such as MongoDB.
+                    With a solid foundation in both front-end and back-end technologies, I enjoy building innovative and responsive web applications. My expertise lies in HTML, CSS, JavaScript, and various libraries like React for front-end development. On the back-end, I am proficient in languages like Node.js,Express.js along with databases such as MongoDB.
                 </p>
                 <p className={styles.information}>
                     Currently, I am seeking opportunities to expand my skills and contribute to exciting projects. Whether it&apos;s crafting user-friendly interfaces or developing robust back-end systems, I am eager to tackle new challenges and contribute to the success of any development team.
