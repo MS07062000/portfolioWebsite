@@ -18,7 +18,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        align-items: stretch;
         align-content: center;
     }
     
@@ -44,8 +44,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: stretch;
         align-content: center;
     }
 }
@@ -53,7 +53,6 @@
 @media screen and (min-width:1024px) {
     .container {
         background:linear-gradient(rgb(255, 255, 255) 80%, #90EE90 100%);
-        /* background-color: white; */
         display: flex;
         width: 100vw;
         flex-direction: column;
@@ -70,8 +69,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
+        justify-content: flex-start;
+        align-items: stretch;
         align-content: center;
     }
 }

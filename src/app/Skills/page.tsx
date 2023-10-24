@@ -22,6 +22,9 @@ export default function Skills() {
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/firebase.png" skillName="Firebase"></SkillCard>
                 <SkillCard skillIconImage="https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png" skillName="Java"></SkillCard>
                 <SkillCard skillIconImage={github} skillName="GitHub"></SkillCard>
+                <SkillCard skillIconImage="https://img.icons8.com/?size=48&id=EzPCiQUqWWEa&format=png" skillName="Bootstrap"></SkillCard>
+                <SkillCard skillIconImage="https://img.icons8.com/?size=48&id=x7XMNGh2vdqA&format=png" skillName="Tailwind CSS"></SkillCard>
+                <SkillCard skillIconImage="https://img.icons8.com/?size=48&id=asWSSTBrDlTW&format=png" skillName="React"></SkillCard>
             </div>
         </div>);
 }

@@ -26,6 +26,12 @@ const nextConfig = {
                 port: '',
                 pathname: '/**',
             },
+            {
+                protocol: 'https',
+                hostname: 'ez-car-landing-page-alpha.vercel.app',
+                port: '',
+                pathname: '/Images/**',
+            },
         ],
     },
 }
