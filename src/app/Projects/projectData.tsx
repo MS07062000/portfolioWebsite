@@ -1,12 +1,6 @@
 import { ProjectInfo } from "./projectInfo";
-
+import ezlogo from "../../../public/ezLogo.png";
 export const projectData: ProjectInfo[] = [
-    new ProjectInfo('Spence',
-        'Spence is a Flutter-based mobile app for tracking the shelf life of pantry items, medicines, cosmetics, and more by storing expiry dates in Firebase.',
-        'https://github.com/MS07062000/spence',
-        'https://www.youtube.com/watch?v=uA8kV7FX8Gw',
-        'https://img.youtube.com/vi/uA8kV7FX8Gw/mqdefault.jpg',
-        ''),
     new ProjectInfo('Spence',
         'Spence is a Flutter-based mobile app for tracking the shelf life of pantry items, medicines, cosmetics, and more by storing expiry dates in Firebase.',
         'https://github.com/MS07062000/spence',
@@ -40,11 +34,18 @@ export const projectData: ProjectInfo[] = [
         'https://youtube-clone-ms07062000.vercel.app/'
     ),
     new ProjectInfo('EZ Car Registration Services',
-    'This project is built on Vite and React.',
-    'https://github.com/Honshu11/ez-car-landing-page',
-    '',
-    'https://ez-car-landing-page-alpha.vercel.app/Images/ezlogo2.png',
-    'https://ez-car-landing-page-alpha.vercel.app/'
-),
+        'EZ Car Registration Services is a dynamic website that leverages Vite and React as well as  Google Sheets for blogs and customer reviews information. Achieving a stellar Lighthouse score of over 90, it ensures top-tier performance and great user experience',
+        'https://github.com/Honshu11/ez-car-landing-page',
+        '',
+        ezlogo,
+        'https://www.ezcarservices.com/'
+    ),
+    new ProjectInfo('Recigo',
+        'Recigo, a collaborative effort within the Chingu organization, involved remote teamwork with a skilled designer and developer. Leveraging Vite, React, PostgreSQL, Node.js, and Express.js, I contributed across multiple pages, aiding in deployment and ensuring timely, bug-free project completion alongside the team.',
+        'https://github.com/chingu-voyages/v46-tier3-team-38',
+        '',
+        'https://recipo-frontend.onrender.com/assets/recigo1-e6e5f85c.png',
+        'https://recipo-frontend.onrender.com/'
+    ),
 
 ];

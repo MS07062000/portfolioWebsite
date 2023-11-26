@@ -28,9 +28,9 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'ez-car-landing-page-alpha.vercel.app',
+                hostname: 'recipo-frontend.onrender.com',
                 port: '',
-                pathname: '/Images/**',
+                pathname: '/**',
             },
         ],
     },

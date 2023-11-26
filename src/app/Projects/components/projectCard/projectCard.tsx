@@ -6,6 +6,7 @@ import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+
 type projectCardProps = {
     projectName: string; projectDescription: string; srcImage: string | StaticImageData; codeLink: string; videoLink: string; deployedLink?: string;
 };
@@ -29,25 +30,26 @@ const ProjectCard: FunctionComponent<projectCardProps> = ({ projectName, project
         }
 
     }
-    useEffect(() => {
-        const projectCardElement = projectCardRef.current;
-        if (projectCardElement) {
-            projectCardElement.addEventListener("mouseover", handleImageHover);
-            projectCardElement.addEventListener("mouseleave", handleImageNotHover);
+    // useEffect(() => {
+    //     const projectCardElement = projectCardRef.current;
+    //     if (projectCardElement) {
+    //         projectCardElement.addEventListener("mouseover", handleImageHover);
+    //         projectCardElement.addEventListener("mouseleave", handleImageNotHover);
 
-            // Clean up the event listener when the component unmounts
-            return () => {
-                projectCardElement.removeEventListener('mouseover', handleImageHover);
-                projectCardElement.removeEventListener("mouseleave", handleImageNotHover);
-            };
-        }
-
-
-    }, []);
+    //         // Clean up the event listener when the component unmounts
+    //         return () => {
+    //             projectCardElement.removeEventListener('mouseover', handleImageHover);
+    //             projectCardElement.removeEventListener("mouseleave", handleImageNotHover);
+    //         };
+    //     }
 
 
+    // }, []);
 
-    return (<div ref={projectCardRef} className={styles.projectCardContainer}>
+
+
+    return (<div ref={projectCardRef} onMouseOver={handleImageHover}
+    onMouseLeave={handleImageNotHover} className={styles.projectCardContainer}>
         <Image className={styles.img} src={srcImage} width={320} height={180} alt={projectName} />
         <div className={styles.projectInfo} ref={projectInfoRef}>
             <p>{projectDescription}</p>
