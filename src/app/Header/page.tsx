@@ -34,6 +34,9 @@ export default function CustomNavbar() {
                                 <button className={`nav-link ${styles.navtitleColor}`} onClick={() => handleOnClick("projects")}>Projects</button>
                             </li>
                             <li className="nav-item">
+                                <button className={`nav-link ${styles.navtitleColor}`} onClick={() => handleOnClick("experience")}>Experience</button>
+                            </li>
+                            <li className="nav-item">
                                 <button className={`${styles.navtitleColor} nav-link`} onClick={() => handleOnClick("contactMe")}>Contact Me</button>
                             </li>
                         </ul>

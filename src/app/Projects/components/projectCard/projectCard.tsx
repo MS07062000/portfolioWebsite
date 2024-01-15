@@ -6,12 +6,13 @@ import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import Link from "next/link";
 import dynamic from "next/dynamic";
+import { ProjectInfo } from "../../projectInfo";
 
-type projectCardProps = {
-    projectName: string; projectDescription: string; srcImage: string | StaticImageData; codeLink: string; videoLink: string; deployedLink?: string;
-};
+// type projectCardProps = {
+//     projectName: string; projectDescription: string; srcImage: string | StaticImageData; codeLink: string; videoLink: string; deployedLink?: string;
+// };
 
-const ProjectCard: FunctionComponent<projectCardProps> = ({ projectName, projectDescription, srcImage, codeLink, videoLink, deployedLink }) => {
+const ProjectCard: FunctionComponent<ProjectInfo> = ({ projectName, projectDescription, srcImage, codeLink, videoLink, deployedLink }) => {
     const projectCardRef = useRef<HTMLDivElement>(null);
     const projectInfoRef = useRef<HTMLDivElement>(null);
     const handleImageHover = () => {
@@ -50,7 +51,7 @@ const ProjectCard: FunctionComponent<projectCardProps> = ({ projectName, project
 
     return (<div ref={projectCardRef} onMouseOver={handleImageHover}
     onMouseLeave={handleImageNotHover} className={styles.projectCardContainer}>
-        <Image className={styles.img} src={srcImage} width={320} height={180} alt={projectName} />
+        <Image className={styles.img} src={srcImage} width={320} height={180} alt={projectName}   loading="lazy" />
         <div className={styles.projectInfo} ref={projectInfoRef}>
             <p>{projectDescription}</p>
             <div className={styles.projectButtonsContainer}>

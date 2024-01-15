@@ -6,7 +6,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(rgb(0, 110, 177) 20%, rgb(252, 90, 25) 80%);
+        background: linear-gradient(rgb(0, 110, 177) 20%, #FC5A19 80%);
     }
 
     .imageContainer {
@@ -65,7 +65,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(rgb(0, 110, 177) 20%, rgb(252, 90, 25) 80%);
+        background: linear-gradient(rgb(0, 110, 177) 20%, #FC5A19 80%);
     }
 
     .imageContainer {
@@ -125,7 +125,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(rgb(0, 110, 177) 20%, rgb(252, 90, 25) 80%);
+        background: linear-gradient(rgb(0, 110, 177) 20%, #FC5A19 80%);
     }
 
     .imageContainer {

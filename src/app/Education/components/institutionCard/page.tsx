@@ -9,7 +9,7 @@ const InstitutionCard: FunctionComponent<institutionCardProps> = ({ srcImage, co
     return (
         <div className={`${styles.card} ${styles.grid}`}>
             <div className={styles.img_column}>
-                <Image className={styles.img} src={srcImage} alt={courseName} />
+                <Image className={styles.img} src={srcImage} alt={courseName} loading="lazy" />
             </div>
             <div className={styles.info_column}>
                 <h2 className={styles.course_name}>{courseName}</h2>

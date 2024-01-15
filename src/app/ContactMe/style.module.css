@@ -1,17 +1,70 @@
+.contactContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: linear-gradient(#FC5A19 0%, #0370B9 100%);
+    color: black;
+}
+
+.title {
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.contactFormContainer {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    width: 100%;
+    row-gap: 10px;
+}
+
+.formField {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    border: 2px solid;
+    border-radius: 2%;
+    width: 100%;
+    height: 3.5rem;
+    font-size: 1.5rem;
+}
+
+.formFieldIcon {
+    margin: 5px;
+    width: 10%;
+}
+
+.formInput {
+    width: 100%;
+    margin: 2%;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 0px solid;
+}
+
+.formInput:focus {
+    outline: none;
+}
+
+.submitButton {
+    background-color: red;
+    border-color: red;
+    font-family: revert;
+    color: white;
+    font-weight: 700;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+}
+
 @media only screen and (min-width: 320px) {
     .contactContainer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
         padding: 20px 10px 20px 10px;
-        background: linear-gradient(#90EE90 05%, #0370B9 100%);
-        color: black;
-    }
-
-    .title {
-        font-weight: 500;
-        line-height: 1.2;
     }
 
     .contactImageAndFormContainer {
@@ -26,79 +79,20 @@
         display: none;
     }
 
-    .contactFormContainer {
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-        width: 100%;
-        row-gap: 10px;
-    }
-
-    .formField {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        border: 2px solid;
-        border-radius: 2%;
-        width: 100%;
-        height: 3.5rem;
-        font-size: 1.5rem;
-    }
-
-    .formFieldIcon {
-        margin: 5px;
-        width: 10%;
-    }
-
-    .formInput {
-        width: 100%;
-        margin: 2%;
-        font-size: 1rem;
-        background-color: transparent;
-        border: 0px solid;
-    }
-
     .formInput::placeholder {
         color: black;
-    }
-
-    .formInput:focus {
-        outline: none;
     }
 
     .submitButton {
         width: 100%;
         font-size: 1rem;
-        padding: 10px;
-        background-color: red;
-        border-color: red;
-        font-family: revert;
-        color: white;
-        font-weight: 700;
-        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-        box-sizing: border-box;
     }
 
 }
 
 @media only screen and (min-width: 768px) {
     .contactContainer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
         padding: 20px 50px 20px 50px;
-        background: linear-gradient(#90EE90 05%, #0370B9 100%);
-        color: black;
-    }
-
-    .title {
-        font-weight: 500;
-        line-height: 1.2;
     }
 
     .contactImageAndFormContainer {
@@ -113,78 +107,19 @@
         display: none;
     }
 
-    .contactFormContainer {
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-        width: 100%;
-        row-gap: 10px;
-    }
-
-    .formField {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        border: 2px solid;
-        border-radius: 2%;
-        width: 100%;
-        height: 3.5rem;
-        font-size: 1.5rem;
-    }
-
-    .formFieldIcon {
-        margin: 5px;
-        width: 10%;
-    }
-
-    .formInput {
-        width: 100%;
-        margin: 2%;
-        font-size: 1rem;
-        background-color: transparent;
-        border: 0px solid;
-    }
-
     .formInput::placeholder {
         color: black;
-    }
-
-    .formInput:focus {
-        outline: none;
     }
 
     .submitButton {
         width: 100%;
         font-size: 1rem;
-        padding: 10px;
-        background-color: red;
-        border-color: red;
-        font-family: revert;
-        color: white;
-        font-weight: 700;
-        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-        box-sizing: border-box;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .contactContainer {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: center;
         padding: 20px 100px 50px 100px;
-        background: linear-gradient(#90EE90 05%, #0370B9 100%);
-        color: black;
-    }
-
-    .title {
-        font-weight: 500;
-        line-height: 1.2;
     }
 
     .contactImageAndFormContainer {
@@ -208,62 +143,14 @@
         height: 100%; */
     }
 
-    .contactFormContainer {
-        flex-basis: 50%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-end;
-        width: 100%;
-        row-gap: 10px;
-    }
-
-    .formField {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-items: center;
-        justify-content: flex-start;
-        border: 2px solid;
-        border-radius: 2%;
-        width: 100%;
-        height: 3.5rem;
-        font-size: 1.5rem;
-    }
-
-    .formFieldIcon {
-        margin: 5px;
-        width: 10%;
-    }
-
-    .formInput {
-        width: 100%;
-        margin: 2%;
-        font-size: 1.2rem;
-        background-color: transparent;
-        border: 0px solid;
-        font-family: arial;
-    }
-
     .formInput::placeholder {
         color: black;
         font-family: arial;
         font-size: 1.2rem;
     }
 
-    .formInput:focus {
-        outline: none;
-    }
-
     .submitButton {
         font-size: 1.2rem;
         padding: 10px;
-        background-color: red;
-        border-color: red;
-        font-family: revert;
-        color: white;
-        font-weight: 700;
-        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-        box-sizing: border-box;
     }
 }

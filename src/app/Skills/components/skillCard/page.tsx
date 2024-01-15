@@ -16,6 +16,7 @@ const SkillCard: FunctionComponent<SkillsProps> = ({ skillName, skillIconImage }
                     width={50}
                     height={50}
                     alt="skillLogo"
+                    loading="lazy"
                 />
                 <p className={styles.skillName}>{skillName}</p>
             </div>

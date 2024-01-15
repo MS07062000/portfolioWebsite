@@ -9,16 +9,18 @@ const ProjectCard = dynamic(() => import('../Projects/components/projectCard/pro
     ssr: false,
 });
 
+// projectName={projectInfo.projectName}
+// projectDescription={projectInfo.projectDescription}
+// codeLink={projectInfo.codeLink}
+// videoLink={projectInfo.videoLink}
+// deployedLink={projectInfo.deployedLink}
+// srcImage={projectInfo.srcImage}
+
 export default function Projects() {
     const projectCards = projectData.map((projectInfo: ProjectInfo, index: Number) => (
         <ProjectCard
             key={'project' + index}
-            projectName={projectInfo.projectName}
-            projectDescription={projectInfo.projectDescription}
-            codeLink={projectInfo.codeLink}
-            videoLink={projectInfo.videoLink}
-            deployedLink={projectInfo.deployedLink}
-            srcImage={projectInfo.srcImage}
+            {...projectInfo}
         />
     ));
     return (

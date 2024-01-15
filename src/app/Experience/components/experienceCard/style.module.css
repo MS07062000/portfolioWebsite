@@ -1,0 +1,109 @@
+.experienceCardContainer {
+    padding: 10px 40px;
+    position: relative;
+    background-color: inherit;
+    width: 75%;
+}
+
+/*circles on timeline*/
+.experienceCardContainer::after {
+    position: absolute;
+    content: '\f0b1';
+    width: 50px;
+    height: 55px;
+    right: -32px;
+    background-color: #ffffff;
+    border: 4px solid #000016FF;
+    top: 10px;
+    border-radius: 50%;
+    z-index: 100;
+    font-size: 1.89rem;
+    text-align: center;
+    color: #02094b;
+    font-weight: 600;
+    /* padding: 5px; */
+    font-family: "Font Awesome 6 Free";
+}
+
+.left {
+    left: -26.5%;
+}
+
+.right {
+    right: -51.5%;
+}
+
+/* arrows pointing right */
+.left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #000016FF;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #000016FF;
+}
+
+/* arrows pointing left  */
+.right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #000016FF;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #000016FF transparent transparent;
+}
+
+.right::after {
+    left: -32px;
+}
+
+.experienceCardContainer .content {
+    background-color: #000016FF;
+    position: relative;
+    border-radius: 6px;
+    padding: 1rem;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 767px) {
+    /* .experience .timeline::after {
+        left: 31px;
+    } */
+
+    .experienceCardContainer {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .experienceCardContainer::before {
+        left: 60px;
+        border: medium solid #000016FF;
+        border-width: 10px 10px 10px 0;
+        border-color: transparent #000016FF transparent transparent;
+    }
+
+    .left{
+        left: 0%;
+    }
+
+    .left::after {
+        left: 5px;
+    }
+
+    .right::after {
+        left: 5px;
+    }
+
+    .right {
+        left: 0%;
+    }
+}

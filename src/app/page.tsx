@@ -1,6 +1,7 @@
 import { default as AboutMe } from './AboutMe/page';
 import { default as ContactMe } from './ContactMe/page';
 import { default as Education } from './Education/page';
+import { default as Experience} from './Experience/page';
 import { default as Footer } from './Footer/page';
 import { default as CustomNavbar } from './Header/page';
 import { default as Projects } from './Projects/page';
@@ -14,6 +15,7 @@ export default function Home() {
     <Education></Education>
     <Skills></Skills>
     <Projects></Projects>
+    <Experience></Experience>
     <ContactMe></ContactMe>
     <Footer></Footer>
     </>
