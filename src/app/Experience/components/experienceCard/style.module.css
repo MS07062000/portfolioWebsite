@@ -2,7 +2,7 @@
     padding: 10px 40px;
     position: relative;
     background-color: inherit;
-    width: 75%;
+    width: 80.2%;
 }
 
 /*circles on timeline*/
@@ -26,7 +26,7 @@
 }
 
 .left {
-    left: -26.5%;
+    left: -32%;
 }
 
 .right {
@@ -105,5 +105,14 @@
 
     .right {
         left: 0%;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .experienceCardContainer {
+        width: 95%;
+    }
+    .left{
+        left: -46.5%;
     }
 }
