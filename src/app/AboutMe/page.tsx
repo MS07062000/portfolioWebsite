@@ -1,7 +1,6 @@
 import Image from 'next/image'
 import styles from '../AboutMe/style.module.css'
 import profilePic from '../../../public/murali.jpeg'
-import Link from 'next/link';
 export default function AboutMe() {
     return (
         <div id="aboutMe" className={styles.aboutMeContainer}>

@@ -1,16 +1,11 @@
-import React, { useEffect, useRef, FunctionComponent } from "react";
+import React, {useRef, FunctionComponent } from "react";
 import styles from './style.module.css';
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
-import Link from "next/link";
-import dynamic from "next/dynamic";
 import { ProjectInfo } from "../../projectInfo";
 
-// type projectCardProps = {
-//     projectName: string; projectDescription: string; srcImage: string | StaticImageData; codeLink: string; videoLink: string; deployedLink?: string;
-// };
 
 const ProjectCard: FunctionComponent<ProjectInfo> = ({ projectName, projectDescription, srcImage, codeLink, videoLink, deployedLink }) => {
     const projectCardRef = useRef<HTMLDivElement>(null);
@@ -31,23 +26,6 @@ const ProjectCard: FunctionComponent<ProjectInfo> = ({ projectName, projectDescr
         }
 
     }
-    // useEffect(() => {
-    //     const projectCardElement = projectCardRef.current;
-    //     if (projectCardElement) {
-    //         projectCardElement.addEventListener("mouseover", handleImageHover);
-    //         projectCardElement.addEventListener("mouseleave", handleImageNotHover);
-
-    //         // Clean up the event listener when the component unmounts
-    //         return () => {
-    //             projectCardElement.removeEventListener('mouseover', handleImageHover);
-    //             projectCardElement.removeEventListener("mouseleave", handleImageNotHover);
-    //         };
-    //     }
-
-
-    // }, []);
-
-
 
     return (<div ref={projectCardRef} onMouseOver={handleImageHover}
     onMouseLeave={handleImageNotHover} className={styles.projectCardContainer}>
@@ -69,7 +47,4 @@ const ProjectCard: FunctionComponent<ProjectInfo> = ({ projectName, projectDescr
     </div>);
 };
 
-
-export default dynamic(() => Promise.resolve(ProjectCard), {
-    ssr: false,
-});
+export default ProjectCard;

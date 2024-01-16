@@ -1,13 +1,9 @@
-"use client";
 import styles from './style.module.css';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import dynamic from 'next/dynamic';
 import { experienceData } from './experienceData';
 import { ExperienceInfo } from './experienceInfo';
-const ExperienceCard = dynamic(() => import('../Experience/components/experienceCard/experienceCard'), {
-    ssr: false,
-});
+import ExperienceCard from './components/experienceCard/experienceCard';
 
 export default function Experience() {
     const experienceCards = experienceData.map((experienceInfo: ExperienceInfo, index: number) => (
