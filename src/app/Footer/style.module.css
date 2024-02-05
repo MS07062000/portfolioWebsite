@@ -1,7 +1,8 @@
 .footer {
-    background-color: #0370B9;
+    background-color: #001219;
     color:white;
     font-family: revert;
+    text-align: center;
 }
 
 .contactInfo span {
@@ -28,7 +29,7 @@
 
 .ownerName {
     font-weight: bold;
-    color: gold;
+    color:#ea9c8b;
 }
 
 @media screen and (min-width:320px) {
@@ -39,11 +40,11 @@
 
     .contactInfo p:first-child {
         font-size: 1.7rem;
-        color:black;
+        color: #98e2ff;
     }
 
     .contactInfo p {
-        margin-bottom: 5px;
+        margin-bottom: 0.75rem;
         line-height: 1.5;
     }
 }
@@ -56,11 +57,11 @@
 
     .contactInfo p:first-child {
         font-size: 1.75rem;
-        color:black;
+        color: #98e2ff;
     }
 
     .contactInfo p {
-        margin-bottom: 5px;
+        margin-bottom: 0.75rem;
         line-height: 1.5;
     }
 }
@@ -76,12 +77,11 @@
 
     .contactInfo p:first-child {
         font-size: 2rem;
-        margin-bottom: 15px;
         font-weight: 600;
-        color:black;
+        color: #98e2ff;
     }
 
     .contactInfo p {
-        margin-bottom: 5px;
+        margin-bottom: 0.75rem;
     }
 }

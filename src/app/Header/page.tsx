@@ -12,7 +12,7 @@ export default function CustomNavbar() {
     }
     return (
         <>
-            <nav className={`navbar navbar-expand-lg navbar-light bg-light ${styles.bglight}`}>
+            <nav className={`navbar navbar-expand-lg navbar-dark ${styles.bglight}`}>
                 <div className="container">
                     <Image src={websiteLogo} alt="WebsiteLogo"
                         width={200} height={100}></Image>

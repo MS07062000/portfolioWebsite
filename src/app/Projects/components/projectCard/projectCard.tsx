@@ -29,17 +29,17 @@ const ProjectCard: FunctionComponent<ProjectInfo> = ({ projectName, projectDescr
 
     return (<div ref={projectCardRef} onMouseOver={handleImageHover}
     onMouseLeave={handleImageNotHover} className={styles.projectCardContainer}>
-        <Image className={styles.img} src={srcImage} width={320} height={180} alt={projectName}   loading="lazy" />
+        <Image className={styles.img} src={srcImage} width={300} height={180} alt={projectName}   loading="lazy" />
         <div className={styles.projectInfo} ref={projectInfoRef}>
             <p>{projectDescription}</p>
             <div className={styles.projectButtonsContainer}>
-                {codeLink && codeLink.length > 0 && <a href={codeLink}>
+                {codeLink && codeLink.length > 0 && <a href={codeLink} aria-label="GitHub Link">
                     <FontAwesomeIcon size="2xl" icon={faGithub} />
                 </a>}
-                {videoLink && videoLink.length > 0 && <a href={videoLink}>
+                {videoLink && videoLink.length > 0 && <a href={videoLink} aria-label="Video Link">
                     <FontAwesomeIcon size="2xl" icon={faYoutube} />
                 </a>}
-                {deployedLink && deployedLink.length > 0 && (<a href={deployedLink}>
+                {deployedLink && deployedLink.length > 0 && (<a href={deployedLink} aria-label="Deployed Link">
                     <FontAwesomeIcon size="2xl" icon={faArrowUpRightFromSquare} />
                 </a>)}
             </div>

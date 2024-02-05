@@ -13,8 +13,8 @@ const InstitutionCard: FunctionComponent<institutionCardProps> = ({ srcImage, co
             </div>
             <div className={styles.info_column}>
                 <h2 className={styles.course_name}>{courseName}</h2>
-                <h4 className={styles.institution_name}>{institutionName}</h4>
-                <h3 className={styles.year_Of_Completion}>Completed in {yearOfCompletion}</h3>
+                <h3 className={styles.institution_name}>{institutionName}</h3>
+                <h4 className={styles.year_Of_Completion}>Completed in {yearOfCompletion}</h4>
             </div>
         </div>
     );

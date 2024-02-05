@@ -1,172 +1,124 @@
+.aboutMeContainer {
+    background-color: #001219;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+.selfImage {
+    height: 100%;
+    border-radius: 5%;
+}
+
+.title {
+    font-weight: bold;
+    font-weight: 700;
+    font-size: 3rem;
+    color: #98e2ff;
+    text-align: center;
+}
+
+.information {
+    margin: 1rem 0%;
+    text-align: justify;
+    color: white;
+    font-weight: 500;
+    font-family: revert;
+}
+
+.contactMeButton {
+    font-size: 1rem;
+    padding: 10px;
+    background-color: transparent;
+    border-color: #98e2ff;
+    border-radius: 10px;
+    font-family: revert;
+    color: white;
+    font-weight: 700;
+    box-sizing: border-box;
+}
+
+.contactMeButton:hover {
+    box-shadow: 2px 2px 5px 0px #98e2ff;
+}
+
 @media only screen and (min-width: 320px) {
     .aboutMeContainer {
-        padding:20px 10px 20px 10px;
-        display: flex;
+        padding: 20px 10px;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(rgb(0, 110, 177) 20%, #FC5A19 80%);
-    }
-
-    .imageContainer {
-        flex-basis: 50%;
-        text-align: center;
     }
 
     .selfImage {
         width: 100%;
-        height: 100%;
-        border-radius: 5%;
     }
 
-    .selfInformationContainer {
-        flex-basis: 50%;
+    .imageContainer{
+        text-align: center;
     }
 
     .title {
-        font-weight: bold;
-        font-weight: 700;
         font-size: 2.5rem;
-        color: white;
-        text-align: center;
     }
 
     .information {
         font-size: 1.2rem;
-        margin: 3% 0%;
-        text-align: justify;
-        color: black;
-        font-weight: 500;
-        font-family: revert
     }
 
     .contactMeButton {
         position: relative;
         left: 33%;
-        font-size: 1rem;
-        padding: 10px;
-        background-color: #00FFFF;
-        border-color: #00FFFF;
-        font-family: revert;
-        color: black;
-        font-weight: 700;
-        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-        box-sizing: border-box;
     }
-
 }
 
 @media only screen and (min-width: 768px) {
     .aboutMeContainer {
-        padding:20px 50px 20px 50px;
-        display: flex;
+        padding: 20px 50px;
         flex-direction: column;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(rgb(0, 110, 177) 20%, #FC5A19 80%);
-    }
-
-    .imageContainer {
-        flex-basis: 50%;
-        height: 50%;
-        width: 50%;
-        text-align: center;
     }
 
     .selfImage {
         width: 65%;
-        height: 100%;
-        border-radius: 5%;
     }
 
-    .selfInformationContainer {
-        flex-basis: 50%;
+    .imageContainer{
+        text-align: center;
     }
 
     .title {
-        font-weight: bold;
-        font-weight: 700;
         font-size: 3rem;
-        color: white;
-        text-align: center;
     }
 
     .information {
         font-size: 1.2rem;
-        margin: 3% 0%;
-        text-align: justify;
-        color: black;
-        font-weight: 500;
-        font-family: revert
     }
 
     .contactMeButton {
         position: relative;
         left: 42%;
-        font-size: 1rem;
-        padding: 10px;
-        background-color: #00FFFF;
-        border-color: #00FFFF;
-        font-family: revert;
-        color: black;
-        font-weight: 700;
-        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-        box-sizing: border-box;
     }
 }
 
 @media only screen and (min-width: 1024px) {
     .aboutMeContainer {
         padding: 20px 100px 50px 100px;
-        display: flex;
         flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-between;
-        align-items: center;
-        background: linear-gradient(rgb(0, 110, 177) 20%, #FC5A19 80%);
     }
 
     .imageContainer {
-        flex-basis: 50%;
+        margin-right: 2rem;
+        text-align: end;
     }
 
     .selfImage {
-        width: 65%;
-        height: 100%;
-        border-radius: 5%;
+        width: 320px;
     }
 
-    .selfInformationContainer {
-        flex-basis: 50%;
-    }
-
-    .title {
-        font-weight: bold;
-        font-weight: 700;
-        font-size: 3rem;
-        color: white;
+    .selfInformationContainer{
+        max-width: 1000px;
     }
 
     .information {
         font-size: 1rem;
-        margin: 3% 0%;
-        text-align: justify;
-        color: black;
-        font-weight: 500;
-        font-family: revert
-    }
-
-    .contactMeButton {
-        font-size: 1rem;
-        padding: 10px;
-        background-color: #00FFFF;
-        border-color: #00FFFF;
-        font-family: revert;
-        color: black;
-        font-weight: 700;
-        box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
-        box-sizing: border-box;
     }
 }

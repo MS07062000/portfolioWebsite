@@ -10,7 +10,9 @@ export default function ContactMe() {
         <div id="contactMe" className={styles.contactContainer}>
             <h1 className={styles.title}><span><FontAwesomeIcon icon={faHeadset} /></span> Get in Touch </h1>
             <div className={styles.contactImageAndFormContainer}>
-                <Image src={contactImg} alt="Contact Image" className={styles.contactImage}   loading="lazy"></Image>
+                <div className={styles.contactImageContainer}>
+                    <Image src={contactImg} alt="Contact Image" className={styles.contactImage} loading="lazy"></Image>
+                </div>
                 <form autoComplete="off" action="https://formsubmit.co/d6ea074874fa4c9cbbd9e25cee936d63" method="POST" className={styles.contactFormContainer}>
                     <div className={styles.formField}>
                         <FontAwesomeIcon icon={faUser} className={styles.formFieldIcon} />

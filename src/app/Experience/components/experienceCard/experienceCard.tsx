@@ -11,8 +11,8 @@ const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({ companyName, j
     return (
         <div className={`${styles.experienceCardContainer} ${alignment === 'left'? styles.left : styles.right}`}>
             <div className={styles.content}>
-                <h3>{companyName}</h3>
-                <h4>{jobTitle}</h4>
+                <h4>{companyName}</h4>
+                <h3>{jobTitle}</h3>
                 <p style={{marginBottom:0}}>{startDate} to {endDate}</p>
             </div>
         </div>

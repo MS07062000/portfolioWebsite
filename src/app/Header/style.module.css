@@ -1,10 +1,10 @@
 .bglight{
-    background:linear-gradient(rgb(0, 110, 177) 0%, rgb(0, 110, 177) 50%);
+    background-color: #001219;
 }
 .linktag{
     text-decoration: none;
 }
 
 .navtitleColor{
-    color: yellow !important;
+    color:#ea9c8b !important;
 }

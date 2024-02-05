@@ -13,7 +13,7 @@
     height: 55px;
     right: -32px;
     background-color: #ffffff;
-    border: 4px solid #000016FF;
+    border: 4px solid #98e2ff;
     top: 10px;
     border-radius: 50%;
     z-index: 100;
@@ -42,9 +42,9 @@
     width: 0;
     z-index: 1;
     right: 30px;
-    border: medium solid #000016FF;
+    border: medium solid #98e2ff;
     border-width: 10px 0 10px 10px;
-    border-color: transparent transparent transparent #000016FF;
+    border-color: transparent transparent transparent #98e2ff;
 }
 
 /* arrows pointing left  */
@@ -56,9 +56,9 @@
     width: 0;
     z-index: 1;
     left: 30px;
-    border: medium solid #000016FF;
+    border: medium solid #98e2ff;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #000016FF transparent transparent;
+    border-color: transparent #98e2ff transparent transparent;
 }
 
 .right::after {
@@ -66,11 +66,13 @@
 }
 
 .experienceCardContainer .content {
-    background-color: #000016FF;
+    /* background-color: #98e2ff; */
+    background-color: transparent;
     position: relative;
     border-radius: 6px;
     padding: 1rem;
     color: #ffffff;
+    border: medium solid #98e2ff;
 }
 
 @media screen and (max-width: 767px) {
@@ -86,9 +88,9 @@
 
     .experienceCardContainer::before {
         left: 60px;
-        border: medium solid #000016FF;
+        border: medium solid #98e2ff;
         border-width: 10px 10px 10px 0;
-        border-color: transparent #000016FF transparent transparent;
+        border-color: transparent #98e2ff transparent transparent;
     }
 
     .left{

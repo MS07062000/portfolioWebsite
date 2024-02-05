@@ -1,14 +1,14 @@
 .container {
-    background:linear-gradient(#FFFFFF 0%, #90EE90 100%);
+    background-color: #001219;
     display: flex;
-    width: 100vw;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
 }
 
 .title {
-    margin-bottom: 2%;
+    margin-bottom: 1rem;
+    color:#98e2ff;
 }
 
 .skillsContainer {
@@ -17,15 +17,12 @@
     flex-wrap: wrap;
     align-items: stretch;
     align-content: center;
+    justify-content: center;
 }
 
 @media screen and (min-width:320px) {
     .container {
         padding:20px 10px 20px 10px;
-    }
-    
-    .skillsContainer {
-        justify-content: center;
     }
 }
 
@@ -35,16 +32,12 @@
     }
 
     .skillsContainer {
-        justify-content: flex-start;
+        justify-content: center;
     } 
 }
 
 @media screen and (min-width:1024px) {
     .container {
         padding: 20px 100px 50px 100px;
-    }
-
-    .skillsContainer {
-        justify-content: flex-start;
     }
 }

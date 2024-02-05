@@ -4,16 +4,17 @@
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+    justify-content: center;
 }
 
 .title {
-    margin-bottom: 2%;
+    margin-bottom: 1rem;
+    color:#98e2ff;
 }
 
 .container {
-    background: linear-gradient( #90ee90 0%, #ffffff 100%);
+    background-color: #001219;
     display: flex;
-    width: 100vw;
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
@@ -24,28 +25,16 @@
         padding: 20px 10px 20px 10px;
         justify-content: center;
     }
-
-    .projects {
-        justify-content: flex-start;
-    }
 }
 
 @media screen and (min-width:768px) {
     .container {
         padding: 15px 20px 15px 20px;
     }
-
-    .projects {
-        justify-content: center;
-    }
 }
 
 @media screen and (min-width:1024px) {
     .container {
         padding: 20px 100px 50px 100px;
-    }
-
-    .projects {
-        justify-content: flex-start;
     }
 }

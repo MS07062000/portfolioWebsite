@@ -3,13 +3,14 @@
     flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
-    background: linear-gradient(#FC5A19 0%, #0370B9 100%);
-    color: black;
+    background-color: #001219;
+    color: white;
 }
 
 .title {
     font-weight: 500;
     line-height: 1.2;
+    color: #98e2ff;
 }
 
 .contactFormContainer {
@@ -17,7 +18,7 @@
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    align-items: flex-end;
+    align-items: flex-start;
     width: 100%;
     row-gap: 10px;
 }
@@ -29,20 +30,20 @@
     align-items: center;
     justify-content: flex-start;
     border: 2px solid;
-    border-radius: 2%;
+    border-radius: 10px;
     width: 100%;
     height: 3.5rem;
     font-size: 1.5rem;
 }
 
 .formFieldIcon {
-    margin: 5px;
-    width: 10%;
+    margin: 0.75rem;
+    width: 25px;
 }
 
 .formInput {
     width: 100%;
-    margin: 2%;
+    margin: 0.75rem;
     font-size: 1rem;
     background-color: transparent;
     border: 0px solid;
@@ -53,14 +54,18 @@
 }
 
 .submitButton {
-    background-color: red;
-    border-color: red;
+    background-color: transparent;
     font-family: revert;
     color: white;
     font-weight: 700;
-    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
     box-sizing: border-box;
     padding: 10px;
+    border: 2px solid #98e2ff;
+    border-radius: 10px;
+}
+
+.submitButton:hover {
+    box-shadow: 2px 2px 5px 0px #98e2ff;
 }
 
 @media only screen and (min-width: 320px) {
@@ -72,16 +77,12 @@
         width: 100%;
     }
 
-    /* .contactImageContainer {
-        flex-basis: 50%;
-    } */
-
     .contactImage {
         display: none;
     }
 
     .formInput::placeholder {
-        color: black;
+        color: white;
     }
 
     .submitButton {
@@ -100,16 +101,12 @@
         width: 100%;
     }
 
-    /* .contactImageContainer {
-        flex-basis: 50%;
-    } */
-
     .contactImage {
         display: none;
     }
 
     .formInput::placeholder {
-        color: black;
+        color: white;
     }
 
     .submitButton {
@@ -128,30 +125,30 @@
         flex-direction: row;
         flex-wrap: nowrap;
         align-items: center;
-        justify-content: space-between;
-        width: 80%;
-        column-gap: 50px;
+        column-gap: 2rem;
     }
 
-    /* .contactImageContainer {
+    .contactImageContainer {
         flex-basis: 50%;
-    } */
+        display: flex;
+        justify-content: flex-end;
+    }
 
     .contactImage {
-        flex-basis: 50%;
         display: block;
-        /* width: 100%;
-        height: 100%; */
+    }
+
+    .contactFormContainer {
+        max-width: 1000px;
     }
 
     .formInput::placeholder {
-        color: black;
+        color: white;
         font-family: arial;
         font-size: 1.2rem;
     }
 
     .submitButton {
         font-size: 1.2rem;
-       
     }
 }
