@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../AboutMe/style.module.css'
 import profilePic from '../../../public/murali.jpeg'
 import { useEffect, useMemo, useRef } from 'react';
+import Link from 'next/link';
 export default function AboutMe() {
     const imgRef = useRef<HTMLImageElement>(null);
     const titleRef = useRef<HTMLParagraphElement>(null);
@@ -76,9 +77,9 @@ export default function AboutMe() {
                     <span className={styles.information}>Feel free to reach out to me to discuss potential collaborations, project ideas, or just to connect. Let&apos;s build something amazing together!
                     </span>
                 </p>
-                <a href="https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view">
+                <Link href="https://drive.google.com/file/d/1WHIXmMFif8_XeQ-pSBNwRjpBMiJC7Urh/view" target="_blank">
                     <button ref={contactRef} className={styles.contactMeButton}>Hire Me</button>
-                </a>
+                </Link>
             </div>
         </div>
     );

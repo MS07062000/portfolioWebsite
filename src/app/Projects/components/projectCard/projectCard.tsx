@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { ProjectInfo } from "../../projectInfo";
+import Link from "next/link";
 
 interface ProjectCardProps {
     projectInfo: ProjectInfo;
@@ -17,15 +18,15 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({ projectInfo: { proje
             <h3>{projectName}</h3>
             <p>{projectDescription}</p>
             <div className={styles.projectButtonsContainer}>
-                {codeLink && codeLink.length > 0 && <a href={codeLink} aria-label="GitHub Link">
+                {codeLink && codeLink.length > 0 && <Link href={codeLink} aria-label="GitHub Link" target="_blank">
                     <FontAwesomeIcon size="2xl" className={styles.projectCardIcon} icon={faGithub} />
-                </a>}
-                {videoLink && videoLink.length > 0 && <a href={videoLink} aria-label="Video Link">
+                </Link>}
+                {videoLink && videoLink.length > 0 && <Link href={videoLink} aria-label="Video Link" target="_blank">
                     <FontAwesomeIcon size="2xl" className={styles.projectCardIcon} icon={faYoutube} />
-                </a>}
-                {deployedLink && deployedLink.length > 0 && (<a href={deployedLink} aria-label="Deployed Link">
+                </Link>}
+                {deployedLink && deployedLink.length > 0 && (<Link href={deployedLink} aria-label="Deployed Link" target="_blank">
                     <FontAwesomeIcon size="2xl" className={styles.projectCardIcon} icon={faArrowUpRightFromSquare} />
-                </a>)}
+                </Link>)}
             </div>
         </div>);
 };
