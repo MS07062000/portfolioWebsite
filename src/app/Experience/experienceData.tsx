@@ -1,7 +1,12 @@
-import { ExperienceInfo } from "./experienceInfo";
+import ExperienceInfo from "./experienceInfo";
 
-export const experienceData: ExperienceInfo[] = [
-    new ExperienceInfo(
-        'BrandKettle','Software Developer | Internship','September-2023', 'Decemeber-2023'
-    ),
-]
+const experienceData: ExperienceInfo[] = [
+    {
+        companyName: 'BrandKettle',
+        jobTitle: 'Software Developer | Internship',
+        startDate: 'September-2023',
+        endDate: 'Decemeber-2023',
+    }
+];
+
+export default experienceData;

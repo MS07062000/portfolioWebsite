@@ -4,6 +4,7 @@
     flex-wrap: nowrap;
     align-items: center;
     column-gap: 2rem;
+    justify-content: center;
 }
 
 .selfImage {
@@ -53,7 +54,7 @@
         width: 100%;
     }
 
-    .imageContainer{
+    .imageContainer {
         text-align: center;
     }
 
@@ -81,7 +82,7 @@
         width: 65%;
     }
 
-    .imageContainer{
+    .imageContainer {
         text-align: center;
     }
 
@@ -114,11 +115,75 @@
         width: 320px;
     }
 
-    .selfInformationContainer{
+    .selfInformationContainer {
         max-width: 1000px;
     }
 
     .information {
         font-size: 1rem;
+    }
+}
+
+.bounceInFromRightAnimation {
+    animation: bounceInFromRight 1s ease 0s 1 normal forwards;
+}
+
+
+
+@keyframes bounceInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(-30px);
+    }
+
+    80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.bounceInFromLeftAnimation {
+    animation: bounceInFromLeft 1s ease-in-out forwards;
+}
+
+@keyframes bounceInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(30px);
+    }
+
+    80% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.pulse {
+    animation: pulse 1s infinite ease-in-out alternate;
+}
+
+@keyframes pulse {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1.2);
     }
 }

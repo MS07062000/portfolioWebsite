@@ -1,7 +1,7 @@
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import styles from './style.module.css';
 import { FunctionComponent } from "react";
-import { ExperienceInfo } from "../../experienceInfo";
+import ExperienceInfo from "../../experienceInfo";
 
 interface ExperienceCardProps extends ExperienceInfo {
     alignment: 'left' | 'right';

@@ -5,10 +5,9 @@
     border: 1px solid #98e2ff;
     text-align: center;
     color: white;
-    animation: skillsCardAnimation 2s ease 0s 1 normal forwards;
 }
 
-.card:hover{
+.card:hover {
     box-shadow: 0px 0px 5px 2px #98e2ff;
 }
 
@@ -37,14 +36,16 @@
     }
 }
 
-@keyframes skillsCardAnimation {
-    0% {
-        opacity: 0;
-        transform: scale(0.5);
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
     }
 
-    100% {
-        opacity: 1;
+    to {
         transform: scale(1);
     }
+}
+
+.skillCardAnimation {
+    animation: zoomIn 1s ease 0s 1 normal forwards;
 }

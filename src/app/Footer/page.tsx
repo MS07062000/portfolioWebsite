@@ -13,10 +13,10 @@ export default function Footer() {
             <p><span><FontAwesomeIcon icon={faEnvelope} /></span><span>singhmurali.14@gmail.com</span></p>
             <p><span><FontAwesomeIcon icon={faLocationDot} /></span>Navi Mumbai, India-410 209</p>
             <p>
-                <Link href="https://github.com/MS07062000"><span><FontAwesomeIcon icon={faGithub} style={{color:"#98e2ff"}} /></span></Link>
-                <Link href="https://www.linkedin.com/in/murali-singh/"><span><FontAwesomeIcon icon={faLinkedin} style={{color:"#98e2ff"}}/></span></Link>
-                <Link href="https://twitter.com/Murali070600"><span><FontAwesomeIcon icon={faTwitter} style={{color:"#98e2ff"}}/></span></Link>
-                <Link href="https://www.youtube.com/@MuraliSingh07/videos"><span><FontAwesomeIcon icon={faYoutube} style={{color:"#98e2ff"}}/></span></Link>
+                <Link href="https://github.com/MS07062000"><span><FontAwesomeIcon icon={faGithub} className={styles.socialIcons} /></span></Link>
+                <Link href="https://www.linkedin.com/in/murali-singh/"><span><FontAwesomeIcon icon={faLinkedin} className={styles.socialIcons}/></span></Link>
+                <Link href="https://twitter.com/Murali070600"><span><FontAwesomeIcon icon={faTwitter} className={styles.socialIcons}/></span></Link>
+                <Link href="https://www.youtube.com/@MuraliSingh07/videos"><span><FontAwesomeIcon icon={faYoutube} className={styles.socialIcons}/></span></Link>
                 <Link href="https://topmate.io/murali_singh/389479"><Image src={topmateLogo} width={32} height={32} alt={"Topmate"} className={styles.img} /></Link>
             </p>
         </div>

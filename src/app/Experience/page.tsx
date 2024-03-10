@@ -1,8 +1,8 @@
 import styles from './style.module.css';
 import { faBriefcase } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { experienceData } from './experienceData';
-import { ExperienceInfo } from './experienceInfo';
+import experienceData from './experienceData';
+import ExperienceInfo from './experienceInfo';
 import ExperienceCard from './components/experienceCard/experienceCard';
 
 export default function Experience() {

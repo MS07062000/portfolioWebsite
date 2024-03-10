@@ -1,6 +1,6 @@
 .footer {
     background-color: #001219;
-    color:white;
+    color: white;
     font-family: revert;
     text-align: center;
 }
@@ -14,7 +14,7 @@
     color: #000000;
 }
 
-.img{
+.img {
     vertical-align: sub;
 }
 
@@ -29,13 +29,17 @@
 
 .ownerName {
     font-weight: bold;
-    color:#ea9c8b;
+    color: #ea9c8b;
+}
+
+.socialIcons {
+    color: #98e2ff;
 }
 
 @media screen and (min-width:320px) {
     .footer {
         font-weight: 600;
-        padding:20px 10px 20px 10px;
+        padding: 20px 10px 20px 10px;
     }
 
     .contactInfo p:first-child {

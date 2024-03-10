@@ -34,6 +34,7 @@
     width: 100%;
     height: 3.5rem;
     font-size: 1.5rem;
+    transform: translateX(100%);
 }
 
 .formFieldIcon {
@@ -62,6 +63,7 @@
     padding: 10px;
     border: 2px solid #98e2ff;
     border-radius: 10px;
+    transform: translateX(100%);
 }
 
 .submitButton:hover {
@@ -151,4 +153,31 @@
     .submitButton {
         font-size: 1.2rem;
     }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    to {
+        transform: translateX(0);
+    }
+}
+
+.formFieldEnterAnimation {
+    animation: slideInFromRight 1s ease 0s 1 normal forwards;
+}
+
+.contactImageEnterAnimation {
+    animation: slideInFromLeft 1s ease 0s 1 normal forwards;
+}
+.submitButtonEnterAnimation {
+    animation: slideInFromRight 1s ease 0.04s 1 normal forwards;
 }

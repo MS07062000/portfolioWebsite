@@ -8,3 +8,7 @@
 .navtitleColor{
     color:#ea9c8b !important;
 }
+
+.navtitleColor:hover{
+    transform: scale(1.1);
+}

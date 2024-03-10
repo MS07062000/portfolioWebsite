@@ -1,5 +1,4 @@
-
-.card:hover{
+.card:hover {
     box-shadow: 0px 0px 5px 2px #98e2ff;
 }
 
@@ -24,7 +23,6 @@
 @media only screen and (min-width: 320px) {
     .card {
         border: 1px solid #98e2ff;
-        animation: educationCardAnimation 2s ease 0s 1 normal forwards;
         border-radius: 10px;
         padding: 10px;
         /* width: 90%; */
@@ -63,7 +61,6 @@
 @media only screen and (min-width: 768px) {
     .card {
         border: 1px solid #98e2ff;
-        animation: educationCardAnimation 2s ease 0s 1 normal forwards;
         border-radius: 10px;
         padding: 10px;
         width: 100%;
@@ -102,7 +99,6 @@
 @media only screen and (min-width: 1024px) {
     .card {
         border: 1px solid #98e2ff;
-        animation: educationCardAnimation 2s ease 0s 1 normal forwards;
         border-radius: 10px;
         padding: 10px;
         width: 100%;
@@ -139,14 +135,30 @@
     }
 }
 
-@keyframes educationCardAnimation {
-    0% {
-        opacity: 0;
+@keyframes slideInFromLeft {
+    from {
         transform: translateX(-100%);
     }
 
-    100% {
-        opacity: 1;
+    to {
         transform: translateX(0);
     }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.institutionCardEnteranceAnimationEvenChild {
+    animation: slideInFromLeft 2s ease 0s 1 normal forwards;
+}
+
+.institutionCardEnteranceAnimationOddChild {
+    animation: slideInFromRight 2s ease 0s 1 normal forwards;
 }
