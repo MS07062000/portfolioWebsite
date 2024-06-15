@@ -1,5 +1,6 @@
 import { ProjectInfo } from "./projectInfo";
 import ezlogo from "../../../public/ezLogo.png";
+import earthlyEco from "../../../public/earthlyEco.webp";
 export const projectData: ProjectInfo[] = [
     {
         projectName: "Spence",
@@ -39,7 +40,7 @@ export const projectData: ProjectInfo[] = [
         codeLink: 'https://github.com/MS07062000/YoutubeClone',
         videoLink: '',
         srcImage: 'https://i.pinimg.com/originals/14/e5/84/14e584760464db3248dd7c57e15d577a.jpg',
-        deployedLink: 'https://youtube-clone-ms07062000.vercel.app/'
+        deployedLink: 'https://youtube-clone-ms07062000.vercel.app'
     },
     {
         projectName: 'EZ Car Registration Services',
@@ -47,7 +48,7 @@ export const projectData: ProjectInfo[] = [
         codeLink: 'https://github.com/Honshu11/ez-car-landing-page',
         videoLink: '',
         srcImage: ezlogo,
-        deployedLink: 'https://www.ezcarservices.com/'
+        deployedLink: 'https://www.ezcarservices.com'
     },
     {
         projectName: 'Recigo',
@@ -55,6 +56,14 @@ export const projectData: ProjectInfo[] = [
         codeLink: 'https://github.com/chingu-voyages/v46-tier3-team-38',
         videoLink: '',
         srcImage: 'https://recipo-frontend.onrender.com/assets/recigo1-e6e5f85c.png',
-        deployedLink: 'https://recipo-frontend.onrender.com/'
+        deployedLink: 'https://recipo-frontend.onrender.com'
     },
+    {
+        projectName: 'EarthlyEco',
+        projectDescription: 'This is an ecommerce application built using React, Redux, TypeScript, Node.js, Express.js, Firebase, and Python. The application facilitates various features such as managing categories and products, adding products to cart and wishlist, purchasing products individually or via cart, managing orders and payments through Razorpay, and providing admin functionalities for category and product management.',
+        codeLink: 'https://github.com/MS07062000/EarthlyEco',
+        deployedLink: 'https://maniecommercestore.web.app',
+        videoLink: "",
+        srcImage: earthlyEco
+    }
 ];

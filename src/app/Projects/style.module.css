@@ -23,8 +23,8 @@
     }
 
     100% {
-        left: -2292px;
-        /* card width is 300px because image width is 300px and gap is 32px. Total 7 cards is 7 * 300 = 2100px and 6 * 32 = 192px.Remember if you want to add more cards, you need to add more 32px and 300px */
+        left: -2592px;
+        /* card width is 300px because image width is 300px and gap is 32px. Total 7 cards is 8 * 300 = 2400px and 6 * 32 = 192px.Remember if you want to add more cards, you need to add more 32px and 300px */
     }
 }
 
@@ -45,7 +45,7 @@
 .projectsContainer {
     overflow: hidden;
     position: relative;
-    height: 620px;
+    height: 700px;
     border-color: #4b5563;
     width: 100%;
     padding-top: 15px;
