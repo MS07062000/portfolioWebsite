@@ -1,6 +1,6 @@
 import { ProjectInfo } from "./projectInfo";
 import ezlogo from "../../../public/ezLogo.png";
-import earthlyEco from "../../../public/earthlyEco.webp";
+import earthlyEcoThumbnail from "../../../public/earthlyEcoThumbnail.webp";
 export const projectData: ProjectInfo[] = [
     {
         projectName: "Spence",
@@ -64,6 +64,6 @@ export const projectData: ProjectInfo[] = [
         codeLink: 'https://github.com/MS07062000/EarthlyEco',
         deployedLink: 'https://maniecommercestore.web.app',
         videoLink: "",
-        srcImage: earthlyEco
+        srcImage: earthlyEcoThumbnail
     }
 ];
