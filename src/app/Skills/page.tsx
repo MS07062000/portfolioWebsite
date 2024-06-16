@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { default as SkillCard } from './components/skillCard/page'
+import { default as SkillCard } from './components/skillCard/skillCard'
 import styles from './style.module.css'
 import { faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 import skillCards from './skillsData';
@@ -13,7 +13,7 @@ export default function Skills() {
                 <span> Skills & Abilities</span>
             </h1>
             <div className={styles.skillsContainer}>
-                {skillCards.map((skill: SkillInfo, index: number) => <SkillCard key={"skill" + index} skillIconImage={skill.skillIconImage} skillName={skill.skillName} />)}
+                {skillCards.map((skill: SkillInfo, index: number) => <SkillCard key={"skill" + index} {...skill} />)}
             </div>
         </div>);
 }
