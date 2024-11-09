@@ -47,7 +47,8 @@ const InstitutionCard: React.FC<InstitutionCardProps> = ({ index, srcImage, cour
     return (
         <div ref={cardRef} className={`${styles.card} ${styles.grid}`}>
             <div className={styles.img_column}>
-                <Image className={styles.img} src={srcImage} alt={courseName} loading="lazy" />
+                <Image className={styles.img} src={srcImage} alt={courseName} height={0}
+                    width={0} loading="lazy" />
             </div>
             <div className={styles.info_column}>
                 <h2 className={styles.course_name}>{courseName}</h2>

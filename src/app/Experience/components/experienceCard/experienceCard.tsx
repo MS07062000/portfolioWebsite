@@ -10,13 +10,15 @@ interface ExperienceCardProps extends ExperienceInfo {
 
 const ExperienceCard: FunctionComponent<ExperienceCardProps> = ({ companyName, jobTitle, startDate, endDate, alignment }) => {
     const cardRef = useRef<HTMLDivElement>(null);
-    const [viewportWidth, setViewportWidth] = useState(window.innerWidth);
+    const [viewportWidth, setViewportWidth] = useState(0);
 
     useEffect(() => {
         const handleResize = () => {
             setViewportWidth(window.innerWidth);
         };
 
+        handleResize();
+        
         window.addEventListener('resize', handleResize);
 
         return () => {

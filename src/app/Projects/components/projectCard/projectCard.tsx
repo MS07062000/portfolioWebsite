@@ -14,7 +14,7 @@ interface ProjectCardProps {
 const ProjectCard: FunctionComponent<ProjectCardProps> = ({ projectInfo: { projectName, projectDescription, srcImage, codeLink, videoLink, deployedLink } }) => {
     return (
         <div className={styles.projectCardContainer}>
-            <Image className={styles.projectImg} src={srcImage} width={300} height={180} alt={projectName} loading="lazy" />
+            <Image className={styles.projectImg} src={srcImage} width={300} height={0} alt={projectName} loading="lazy" />
             <h3>{projectName}</h3>
             <p>{projectDescription}</p>
             <div className={styles.projectButtonsContainer}>

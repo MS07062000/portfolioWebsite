@@ -17,7 +17,7 @@ export default function ContactMe() {
 
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
-                console.log(entry.target===submitButtonRef.current,entry.isIntersecting);
+                // console.log(entry.target===submitButtonRef.current,entry.isIntersecting);
                 if (entry.isIntersecting) {
                     if (entry.target === formRef.current) {
                         formfields!.forEach((formfield: Element, index: number) => {
