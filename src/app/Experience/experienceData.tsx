@@ -12,6 +12,12 @@ const experienceData: ExperienceInfo[] = [
         jobTitle: 'Lead Software Developer',
         startDate: 'April-2024',
         endDate: 'June-2024',
+    },
+    {
+        companyName: 'GoldsmithAI',
+        jobTitle: 'Software Developer',
+        startDate: 'July-2024',
+        endDate: 'November-2024',
     }
 ];
 

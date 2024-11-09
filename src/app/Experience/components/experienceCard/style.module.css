@@ -38,7 +38,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 27px;
     width: 0;
     z-index: 1;
     right: 30px;
@@ -52,7 +52,7 @@
     content: " ";
     height: 0;
     position: absolute;
-    top: 22px;
+    top: 27px;
     width: 0;
     z-index: 1;
     left: 30px;
@@ -93,7 +93,7 @@
         border-color: transparent #98e2ff transparent transparent;
     }
 
-    .left{
+    .left {
         left: 0%;
     }
 
@@ -114,7 +114,58 @@
     .experienceCardContainer {
         width: 95%;
     }
-    .left{
+
+    .left {
         left: -46.5%;
+    }
+}
+
+
+.swingInRightForward {
+    animation: swingInRightForward 0.5s linear both;
+}
+
+@keyframes swingInRightForward {
+    0% {
+        -webkit-transform: rotateY(-100deg);
+        transform: rotateY(-100deg);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        opacity: 0;
+        z-index: 100;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        -webkit-transform-origin: right;
+        transform-origin: right;
+        opacity: 1;
+        z-index: 100;
+    }
+}
+
+
+.swingInLeftForward {
+    animation: swingInLeftForward 0.5s linear both;
+}
+
+@keyframes swingInLeftForward {
+    0% {
+        -webkit-transform: rotateY(100deg);
+        transform: rotateY(100deg);
+        -webkit-transform-origin: left;
+        transform-origin: left;
+        opacity: 0;
+        z-index: 100;
+    }
+
+    100% {
+        -webkit-transform: rotateY(0);
+        transform: rotateY(0);
+        -webkit-transform-origin: left;
+        transform-origin: left;
+        opacity: 1;
+        z-index: 100;
     }
 }

@@ -20,6 +20,7 @@
     content: '';
     position: absolute;
     width: 6px;
+    border-radius: 6px;
     background: #98e2ff;
     top: 0;
     bottom: 0;
